@@ -1,7 +1,7 @@
 {
   "name": "@tinkoff/eslint-config-angular",
   "version": "1.53.2",
-  "description": "Tinkoff ESLint configs for Angular apps",
+  "description": "ESLint configs for Angular apps",
   "license": "Apache-2.0",
   "keywords": [
     "eslint",
@@ -10,13 +10,9 @@
   ],
   "scripts": {},
   "main": "index.js",
-  "author": {
-    "name": "Tinkoff Team",
-    "email": "frontend@tinkoff.ru"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tinkoff/linters.git"
+    "url": "https://github.com/tramvaijs/linters.git"
   },
   "dependencies": {
     "@html-eslint/eslint-plugin": "^0.15.0",

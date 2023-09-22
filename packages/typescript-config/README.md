@@ -1,6 +1,6 @@
 # @tinkoff/typescript-config
 
-Common TypeScript configuration for Tinkoff projects
+Common TypeScript configuration
 
 ## Requirements
 

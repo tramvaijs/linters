@@ -1,6 +1,6 @@
 # @tinkoff/stylelint-config
 
-Common Stylelint configuration for Tinkoff projects
+Common Stylelint configuration
 
 ## Usage
 

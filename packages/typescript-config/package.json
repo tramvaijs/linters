@@ -1,7 +1,7 @@
 {
   "name": "@tinkoff/typescript-config",
   "version": "1.53.1",
-  "description": "Tinkoff TypeScript config",
+  "description": "TypeScript ESlint config",
   "license": "Apache-2.0",
   "keywords": [
     "typescript",
@@ -11,13 +11,9 @@
     "test": "tsc -p test/tsconfig.json --noEmit"
   },
   "main": "tsconfig.base.json",
-  "author": {
-    "name": "Tinkoff Team",
-    "email": "frontend@tinkoff.ru"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tinkoff/linters.git"
+    "url": "https://github.com/tramvaijs/linters.git"
   },
   "publishConfig": {
     "access": "public"

@@ -1,4 +1,4 @@
-# Tinkoff linter configurations
+# Linter configurations
 
 Monorepo for all the tooling which enables ESLint, Prettier, Stylelint to support TypeScript projects.
 

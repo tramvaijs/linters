@@ -1,6 +1,6 @@
 # @tinkoff/eslint-config
 
-ESlint plugin includes Tinkoff rules for JS and TS codebase. Better to use with framework-oriented packages `@tinkoff/eslint-config-react` or `@tinkoff/eslint-config-angular`
+ESlint plugin includes rules for JS and TS codebase. Better to use with framework-oriented packages `@tinkoff/eslint-config-react` or `@tinkoff/eslint-config-angular`
 
 ## Usage
 

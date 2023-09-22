@@ -12,7 +12,7 @@ module.exports = {
       description: 'Function with return keyword should specify return type',
       category: 'Stylistic Issues',
       recommended: false,
-      url: 'https://github.com/TinkoffCreditSystems/linters',
+      url: 'https://github.com/tramvaijs/linters',
     },
     messages: {
       typeRequired: 'Function with return keyword should specify return type.',

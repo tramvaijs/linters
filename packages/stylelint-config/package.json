@@ -1,20 +1,16 @@
 {
   "name": "@tinkoff/stylelint-config",
   "version": "1.52.1",
-  "description": "Tinkoff stylelint config",
+  "description": "Stylelint config",
   "license": "Apache-2.0",
   "keywords": [
     "stylelint",
     "prettier"
   ],
   "main": "stylelint.config.js",
-  "author": {
-    "name": "Tinkoff Team",
-    "email": "frontend@tinkoff.ru"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tinkoff/linters.git"
+    "url": "https://github.com/tramvaijs/linters.git"
   },
   "publishConfig": {
     "access": "public"
