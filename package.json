@@ -1,6 +1,6 @@
 {
   "name": "linters-monorepo",
-  "description": "Linter configs and custom TSLint rules of Tinkoff",
+  "description": "ESlint, Stylelint and Prettier configurations",
   "license": "Apache-2.0",
   "scripts": {
     "********** Linters": "",
@@ -23,13 +23,9 @@
     "publish:ci": "lerna publish from-git --yes",
     "publish:ci:beta": "lerna publish --dist-tag beta from-git --yes"
   },
-  "author": {
-    "name": "Tinkoff Team",
-    "email": "frontend@tinkoff.ru"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tinkoff/linters.git"
+    "url": "https://github.com/tramvaijs/linters.git"
   },
   "prettier": "./packages/prettier-config/index.js",
   "devDependencies": {

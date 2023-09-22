@@ -1,7 +1,7 @@
 {
   "name": "@tinkoff/eslint-config-react",
   "version": "1.52.1",
-  "description": "Tinkoff ESLint configs for React apps",
+  "description": "ESLint configs for React apps",
   "license": "Apache-2.0",
   "keywords": [
     "eslint",
@@ -10,13 +10,9 @@
   ],
   "scripts": {},
   "main": "index.js",
-  "author": {
-    "name": "Tinkoff Team",
-    "email": "frontend@tinkoff.ru"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tinkoff/linters.git"
+    "url": "https://github.com/tramvaijs/linters.git"
   },
   "dependencies": {
     "eslint-config-airbnb": "^18.2.0",

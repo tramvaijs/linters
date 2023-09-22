@@ -81,7 +81,7 @@ module.exports = {
       description: 'Require a consistent member declaration order',
       category: 'Stylistic Issues',
       recommended: false,
-      url: 'https://github.com/TinkoffCreditSystems/linters',
+      url: 'https://github.com/tramvaijs/linters',
     },
     messages: {
       incorrectOrder:
