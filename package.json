@@ -20,8 +20,8 @@
     "preversion": "lerna run build:prod --parallel",
     "version": "lerna version --no-private --conventional-commits --changelog-preset conventionalcommits --yes --ignore-changes '**/package-lock.json'",
     "********** Publish": "",
-    "publish:ci": "lerna publish from-git --yes",
-    "publish:ci:beta": "lerna publish --dist-tag beta from-git --yes"
+    "publish:ci": "lerna publish from-git --yes --no-verify-access",
+    "publish:ci:beta": "lerna publish --dist-tag beta from-git --yes --no-verify-access"
   },
   "repository": {
     "type": "git",
