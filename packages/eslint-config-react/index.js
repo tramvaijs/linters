@@ -41,11 +41,11 @@ module.exports = {
   rules: {
     'react/no-unsafe': ['warn', { checkAliases: true }], // show warnings for deprecated methods
     'react/no-unused-prop-types': 'warn',
-    'react/jsx-handler-names': 'warn',
     'react/prop-types': 'warn',
+    'react/jsx-handler-names': 'warn',
     'react/jsx-filename-extension': 'off',
-    'react/destructuring-assignment': 'off',
     'react/jsx-key': 'error',
+    'react/destructuring-assignment': 'off',
     'react/no-direct-mutation-state': 'error',
     'react/default-props-match-prop-types': 'warn',
     'react/require-default-props': 'off', // default values in props destructuring is not supported
