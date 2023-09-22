@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/eslint-config",
-  "version": "1.54.0",
+  "version": "1.54.1",
   "description": "ESLint configs to rule them all",
   "license": "Apache-2.0",
   "keywords": [
