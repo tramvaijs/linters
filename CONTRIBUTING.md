@@ -1,6 +1,6 @@
 ## Development
 
-- Install dependencies with `npm сi`.
+- Install dependencies with `npm ci`.
 - Run tests with `npm run test:ci`.
 - Follow [Conventional Commits specification](https://conventionalcommits.org/) for every commitmessage.
 

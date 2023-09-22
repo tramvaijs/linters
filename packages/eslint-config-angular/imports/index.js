@@ -29,9 +29,8 @@ module.exports = {
      * @note: note you must disable the base rule
      * as it can report incorrect errors in @typescript-eslint
      */
-    'import/no-duplicates': 'off',
+    'import/no-duplicates': 'error',
     'no-duplicate-imports': 'off',
-    '@typescript-eslint/no-duplicate-imports': 'error',
 
     // overwrite rule from `@tinkoff/eslint-config`
     '@typescript-eslint/consistent-type-imports': 'off',
