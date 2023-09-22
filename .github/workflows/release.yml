@@ -19,8 +19,8 @@ jobs:
 
     - name: Git Identity
       run: |
-        git config --global user.name 'super_oleg'
-        git config --global user.email 'surf4sites@yandex.ru'
+        git config --global user.name 'tramvaijsorg'
+        git config --global user.email 'tramvaijsorg@users.noreply.github.com'
 
     - uses: actions/setup-node@v2
       with:

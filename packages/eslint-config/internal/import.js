@@ -14,8 +14,8 @@ module.exports = {
   rules: {
     'import/no-commonjs': 'off',
     'import/unambiguous': 'off',
-    'import/no-deprecated': 'warn',
     'import/prefer-default-export': 'off', // default imports is evil
+    'import/no-deprecated': 'warn',
     'import/default': 'error', // enable default import validation
     'import/extensions': [
       'error',
