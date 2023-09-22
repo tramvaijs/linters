@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.54.0 (2023-09-22)
+
+
+### Features
+
+* **eslint-config-angular:** support member ordering ([a57a57d](https://github.com/tramvaijs/linters/commit/a57a57d68d8b624da95f6b93d577f4d2adea0fd0))
+* **eslint-config:** bump [@typescript-eslint](https://github.com/typescript-eslint) modules to ^4.28.2 ([#109](https://github.com/tramvaijs/linters/issues/109)) ([93db9af](https://github.com/tramvaijs/linters/commit/93db9afed71a5033ece1f05d5a029b98e799b53a))
+* **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/tramvaijs/linters/issues/45)) ([50d14b1](https://github.com/tramvaijs/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
+* **eslint-plugin:** deprecate current rules ([#136](https://github.com/tramvaijs/linters/issues/136)) ([251e45c](https://github.com/tramvaijs/linters/commit/251e45cdbbebe55c8860c64212c467448752a087))
+* move infrastructure (linting, testing) to repository root ([#61](https://github.com/tramvaijs/linters/issues/61)) ([4a372d4](https://github.com/tramvaijs/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
+* update [@typescript-eslint](https://github.com/typescript-eslint) dependencies ([#120](https://github.com/tramvaijs/linters/issues/120)) ([353dc07](https://github.com/tramvaijs/linters/commit/353dc078b5eb75edf9b189a3ddf1a9f81b1e450c))
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** remove deprecated properties ([#230](https://github.com/tramvaijs/linters/issues/230)) ([eaf5e9a](https://github.com/tramvaijs/linters/commit/eaf5e9ab45c910f4b35ecc5fb1dfd8a879f2d548))
+* **eslint-plugin:** fix dependency + add lerna ([#35](https://github.com/tramvaijs/linters/issues/35)) ([cf67afb](https://github.com/tramvaijs/linters/commit/cf67afbde066a90f93c16969dd00fb4a7847f0c8))
+* **eslint-plugin:** nested return statement ([#57](https://github.com/tramvaijs/linters/issues/57)) ([1195552](https://github.com/tramvaijs/linters/commit/1195552d97c8d70271ad8ef2a3f97e7defbe0104))
+* update [@typescript-eslint](https://github.com/typescript-eslint) packages and TS version in repository ([915e47a](https://github.com/tramvaijs/linters/commit/915e47a87786f9b56f7b936d23655ca3a4b879e7))
+
+
+
 ### [1.52.1](https://github.com/tramvaijs/linters/compare/v1.52.0...v1.52.1) (2023-04-07)
 
 **Note:** Version bump only for package @tinkoff/eslint-plugin

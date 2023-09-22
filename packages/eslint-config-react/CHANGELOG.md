@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.54.0 (2023-09-22)
+
+
+### Features
+
+* **eslint-config:** bump [@typescript-eslint](https://github.com/typescript-eslint) modules to ^4.28.2 ([#109](https://github.com/tramvaijs/linters/issues/109)) ([93db9af](https://github.com/tramvaijs/linters/commit/93db9afed71a5033ece1f05d5a029b98e799b53a))
+* **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/tramvaijs/linters/issues/45)) ([50d14b1](https://github.com/tramvaijs/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
+* move infrastructure (linting, testing) to repository root ([#61](https://github.com/tramvaijs/linters/issues/61)) ([4a372d4](https://github.com/tramvaijs/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
+* **prettier-config:** expose configs for angular ([#139](https://github.com/tramvaijs/linters/issues/139)) ([7291ad7](https://github.com/tramvaijs/linters/commit/7291ad7ae95c6ff6729b0400efc37dba1ca62949))
+* **react:** add eslint-plugin-react-perf ([#103](https://github.com/tramvaijs/linters/issues/103)) ([c08da4a](https://github.com/tramvaijs/linters/commit/c08da4a8c2607c6301bdbc9d63d9137acb258805))
+* remove react-perf plugin ([a9a918b](https://github.com/tramvaijs/linters/commit/a9a918b821c75c7674f0ba874717d2231fad3605))
+
+
+### Bug Fixes
+
+*  rule react/jsx-props-no-spreading disabled ([04b992a](https://github.com/tramvaijs/linters/commit/04b992a12eac2fa0a2a779011c7da414980813aa))
+* **eslint-config-react:** downgrade back to 6.4.1 for avoid broken eslint-plugin-jsx-a11y 6.5.0 ([08ac7ff](https://github.com/tramvaijs/linters/commit/08ac7ff7c72c092842e5115e5ea510dff49c1fdf))
+* **eslint-config, eslint-config-react:** off class-methods-use-this and react/state-in-constructor rules ([#56](https://github.com/tramvaijs/linters/issues/56)) ([fae2041](https://github.com/tramvaijs/linters/commit/fae2041603d4e8a3f0ce8dd2a75284fd8275045f))
+* **eslint-config, eslint-config-react:** update rules ([#53](https://github.com/tramvaijs/linters/issues/53)) ([40cc0b1](https://github.com/tramvaijs/linters/commit/40cc0b1f29c5616a8e5175473d4aeb384ef43133))
+* **react:** off react-perf rules to test files ([#104](https://github.com/tramvaijs/linters/issues/104)) ([1772df8](https://github.com/tramvaijs/linters/commit/1772df869805c20dff2f3452cd16fd4601b9d8cc))
+* Some rules was unused and don't help with development ([#172](https://github.com/tramvaijs/linters/issues/172)) ([dca2c89](https://github.com/tramvaijs/linters/commit/dca2c8998d6ebfc8b88bf90d812d0f3149854ce3))
+* update dependencies ([#59](https://github.com/tramvaijs/linters/issues/59)) ([c6d3025](https://github.com/tramvaijs/linters/commit/c6d30251d80ab11c9336796d6a81ac8880f5d036))
+
+
+
 ### [1.52.1](https://github.com/tramvaijs/linters/compare/v1.52.0...v1.52.1) (2023-04-07)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react

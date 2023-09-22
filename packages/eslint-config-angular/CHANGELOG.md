@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.54.0 (2023-09-22)
+
+
+### Features
+
+* add file-progress plugin ([#210](https://github.com/tramvaijs/linters/issues/210)) ([44b67d1](https://github.com/tramvaijs/linters/commit/44b67d1a0c55beedd38f94a90bef1923b89b9e01))
+* **eslint-config-angular:** add `html-eslint` plugin ([#232](https://github.com/tramvaijs/linters/issues/232)) ([79b8028](https://github.com/tramvaijs/linters/commit/79b802845e105ed80f281b851d381d5bb0bbaf02))
+* **eslint-config-angular:** add `sort-type-constituents` ([#227](https://github.com/tramvaijs/linters/issues/227)) ([db0d84b](https://github.com/tramvaijs/linters/commit/db0d84b4349c93a7bca09014950dfa142656e80f))
+* **eslint-config-angular:** add `unicorn` plugin ([#228](https://github.com/tramvaijs/linters/issues/228)) ([5da54e1](https://github.com/tramvaijs/linters/commit/5da54e19b1fb84ceeeed6b352a3898701b541026))
+* **eslint-config-angular:** add decorator position package ([#217](https://github.com/tramvaijs/linters/issues/217)) ([d3b9d1f](https://github.com/tramvaijs/linters/commit/d3b9d1f95a39e499da4ec458d8d1cdb2fc14bd92))
+* **eslint-config-angular:** add default ignore pattern ([#151](https://github.com/tramvaijs/linters/issues/151)) ([fde6df0](https://github.com/tramvaijs/linters/commit/fde6df0ead229cfd02fdde0a80d31bffbee1985c))
+* **eslint-config-angular:** add import rules ([#152](https://github.com/tramvaijs/linters/issues/152)) ([be87476](https://github.com/tramvaijs/linters/commit/be874767a8bce800c110a51281ee14423c966f4d))
+* **eslint-config-angular:** add most useful rules for async-await ([#195](https://github.com/tramvaijs/linters/issues/195)) ([015e0d1](https://github.com/tramvaijs/linters/commit/015e0d194827282ea6cc6f5b74146c3d1bd2fc37))
+* **eslint-config-angular:** add rxjs plugin ([#188](https://github.com/tramvaijs/linters/issues/188)) ([d90e4d6](https://github.com/tramvaijs/linters/commit/d90e4d6daad360e4a18253ccd2e7e0e1963b708f))
+* **eslint-config-angular:** add strict rules as experimental sub-package ([#225](https://github.com/tramvaijs/linters/issues/225)) ([cc5d609](https://github.com/tramvaijs/linters/commit/cc5d609b48886d7c346aac0ef777b1e745e03eec))
+* **eslint-config-angular:** allow ignoring by void ([#218](https://github.com/tramvaijs/linters/issues/218)) ([1775c32](https://github.com/tramvaijs/linters/commit/1775c3274cfa5d36f2b7b5866e657de1adaa93fd))
+* **eslint-config-angular:** decomposition angular complex configs to optional configs ([#197](https://github.com/tramvaijs/linters/issues/197)) ([df3c1a3](https://github.com/tramvaijs/linters/commit/df3c1a395fcef1fd7df07e0e39472f9b7782b67c))
+* **eslint-config-angular:** decomposition by internal settings ([8d2632d](https://github.com/tramvaijs/linters/commit/8d2632d399f83a0cef6b38abc79737e3b0496013))
+* **eslint-config-angular:** disable prefer-destructuring for *.js and *.ts ([#215](https://github.com/tramvaijs/linters/issues/215)) ([d13bb83](https://github.com/tramvaijs/linters/commit/d13bb83bd5eea0aa462401a9f661ce8492d2e907))
+* **eslint-config-angular:** support `@typescript-eslint/array-type` ([#192](https://github.com/tramvaijs/linters/issues/192)) ([d8e0023](https://github.com/tramvaijs/linters/commit/d8e0023d89ebbd5745f5f2ec17ae58b867d856a8))
+* **eslint-config-angular:** support `dot-notation` ([#229](https://github.com/tramvaijs/linters/issues/229)) ([5d76da2](https://github.com/tramvaijs/linters/commit/5d76da287f4a1878ea883112b0426e24307ff78d))
+* **eslint-config-angular:** support `eqeqeq` ([#199](https://github.com/tramvaijs/linters/issues/199)) ([2be0ecb](https://github.com/tramvaijs/linters/commit/2be0ecb2d8c4faf5067ffc63dd637c63d8efa71e))
+* **eslint-config-angular:** support html files ([#162](https://github.com/tramvaijs/linters/issues/162)) ([05bb880](https://github.com/tramvaijs/linters/commit/05bb880e8f1967294d9cda71b6a2eeca493e72a0))
+* **eslint-config-angular:** support line statements ([#155](https://github.com/tramvaijs/linters/issues/155)) ([6a5bdfe](https://github.com/tramvaijs/linters/commit/6a5bdfe7ccc0014bcfc3122c60e80dec27152d7f))
+* **eslint-config-angular:** support member ordering ([a57a57d](https://github.com/tramvaijs/linters/commit/a57a57d68d8b624da95f6b93d577f4d2adea0fd0))
+* **eslint-config-angular:** support member-accessibility ([#164](https://github.com/tramvaijs/linters/issues/164)) ([e49e86a](https://github.com/tramvaijs/linters/commit/e49e86a4d322dc1fa34b639deaf5f75bb4298ae4))
+* **eslint-config-angular:** support no-inferrable-types, no-unused-vars ([#165](https://github.com/tramvaijs/linters/issues/165)) ([475f2a2](https://github.com/tramvaijs/linters/commit/475f2a26437c5246ae6a12c3dd5e98e911f163fb))
+* **eslint-config-angular:** use recommendation rules from eslint/typescript ([#170](https://github.com/tramvaijs/linters/issues/170)) ([3fc25f3](https://github.com/tramvaijs/linters/commit/3fc25f3baa3b10af028fedd36ea48cfea2167433))
+* **eslint-config:** bump [@typescript-eslint](https://github.com/typescript-eslint) modules to ^4.28.2 ([#109](https://github.com/tramvaijs/linters/issues/109)) ([93db9af](https://github.com/tramvaijs/linters/commit/93db9afed71a5033ece1f05d5a029b98e799b53a))
+* **eslint-plugin-tinkoff:** split eslint-plugin-tinkoff ([#45](https://github.com/tramvaijs/linters/issues/45)) ([50d14b1](https://github.com/tramvaijs/linters/commit/50d14b1bb496b1ca0538e5ad2241f3c2d4f69b1f))
+* **eslint-plugin:** deprecate current rules ([#136](https://github.com/tramvaijs/linters/issues/136)) ([251e45c](https://github.com/tramvaijs/linters/commit/251e45cdbbebe55c8860c64212c467448752a087))
+* move infrastructure (linting, testing) to repository root ([#61](https://github.com/tramvaijs/linters/issues/61)) ([4a372d4](https://github.com/tramvaijs/linters/commit/4a372d49120f8ea309f37e01fb6d145ff7c345dd))
+* **prettier-config:** expose configs for angular ([#139](https://github.com/tramvaijs/linters/issues/139)) ([7291ad7](https://github.com/tramvaijs/linters/commit/7291ad7ae95c6ff6729b0400efc37dba1ca62949))
+* separate html and typescript rules ([#183](https://github.com/tramvaijs/linters/issues/183)) ([1abe9e7](https://github.com/tramvaijs/linters/commit/1abe9e7d2f898fc5402e92f68f15d6ae05fd53f6))
+* update [@typescript-eslint](https://github.com/typescript-eslint) dependencies ([#120](https://github.com/tramvaijs/linters/issues/120)) ([353dc07](https://github.com/tramvaijs/linters/commit/353dc078b5eb75edf9b189a3ddf1a9f81b1e450c))
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** added recommended rules of best practices ([#194](https://github.com/tramvaijs/linters/issues/194)) ([0324843](https://github.com/tramvaijs/linters/commit/03248430bb14ebb3dad97434e70e067e94622f68))
+* **eslint-config-angular:** always try to resolve types under `<root>[@types](https://github.com/types)` ([#166](https://github.com/tramvaijs/linters/issues/166)) ([28e9aea](https://github.com/tramvaijs/linters/commit/28e9aeacb4538bb1b0182cdda865077a1ec95c63))
+* **eslint-config-angular:** correctly ensure typescript config for imports ([#173](https://github.com/tramvaijs/linters/issues/173)) ([b2638e2](https://github.com/tramvaijs/linters/commit/b2638e21a680b48215f295def650e8498185c1c0))
+* **eslint-config-angular:** exclude only dasherize files ([#224](https://github.com/tramvaijs/linters/issues/224)) ([de3003f](https://github.com/tramvaijs/linters/commit/de3003f99a4b88191567d8a876f8b2179a901ab9))
+* **eslint-config-angular:** expose html, ts configs ([#184](https://github.com/tramvaijs/linters/issues/184)) ([da1fde4](https://github.com/tramvaijs/linters/commit/da1fde47f0ce9599686c3568510142ca522de431))
+* **eslint-config-angular:** fix dir typo ([#214](https://github.com/tramvaijs/linters/issues/214)) ([68a9b43](https://github.com/tramvaijs/linters/commit/68a9b4340b684d04e5a7d77f5a32f261829c4e68))
+* **eslint-config-angular:** ignore no-param-reassign ([#153](https://github.com/tramvaijs/linters/issues/153)) ([6682f9f](https://github.com/tramvaijs/linters/commit/6682f9f9ef301458d7bcfc8ebce1a1045657322b))
+* **eslint-config-angular:** overwrite consistent-type-imports ([#175](https://github.com/tramvaijs/linters/issues/175)) ([3018060](https://github.com/tramvaijs/linters/commit/30180604046d6c28e66f490f1c3a112d2b9b028d))
+* **eslint-config-angular:** remove deprecated properties ([#230](https://github.com/tramvaijs/linters/issues/230)) ([eaf5e9a](https://github.com/tramvaijs/linters/commit/eaf5e9ab45c910f4b35ecc5fb1dfd8a879f2d548))
+* **eslint-config-angular:** support `no-implicit-coercion` ([#178](https://github.com/tramvaijs/linters/issues/178)) ([1529ea2](https://github.com/tramvaijs/linters/commit/1529ea2bddf3a9387668e3ea9418dbae187de8b8))
+* **eslint-config-angular:** support `no-return-assign` ([#177](https://github.com/tramvaijs/linters/issues/177)) ([fa278e7](https://github.com/tramvaijs/linters/commit/fa278e7d401727645d3169984b061d670f9f6b3a))
+* **eslint-config-angular:** support `no-useless-rename` ([#179](https://github.com/tramvaijs/linters/issues/179)) ([89660d5](https://github.com/tramvaijs/linters/commit/89660d544d07b844a8cd589c366dd0e55ffa7dc4))
+* **eslint-config-angular:** use `array-simple` instead of `array` ([#193](https://github.com/tramvaijs/linters/issues/193)) ([ba74fde](https://github.com/tramvaijs/linters/commit/ba74fdef7ecec92506776bd83dbaf70a93d96f8f))
+* update [@typescript-eslint](https://github.com/typescript-eslint) packages and TS version in repository ([915e47a](https://github.com/tramvaijs/linters/commit/915e47a87786f9b56f7b936d23655ca3a4b879e7))
+* update dependencies ([#59](https://github.com/tramvaijs/linters/issues/59)) ([c6d3025](https://github.com/tramvaijs/linters/commit/c6d30251d80ab11c9336796d6a81ac8880f5d036))
+
+
+
 ### [1.53.2](https://github.com/tramvaijs/linters/compare/v1.53.1...v1.53.2) (2023-04-13)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular

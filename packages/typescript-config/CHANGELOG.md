@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.54.0 (2023-09-22)
+
+
+### Features
+
+* introduce `@tinkoff/typescript-config` package ([#236](https://github.com/tramvaijs/linters/issues/236)) ([3adaf95](https://github.com/tramvaijs/linters/commit/3adaf95f22a082e9f89f9cf3f1828c86b28a40ac))
+
+
+
 ### [1.53.1](https://github.com/tramvaijs/linters/compare/v1.53.0...v1.53.1) (2023-04-10)
 
 **Note:** Version bump only for package @tinkoff/typescript-config

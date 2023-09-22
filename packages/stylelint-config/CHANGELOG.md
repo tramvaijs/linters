@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.54.0 (2023-09-22)
+
+
+### Features
+
+* **prettier-config:** expose configs for angular ([#139](https://github.com/tramvaijs/linters/issues/139)) ([7291ad7](https://github.com/tramvaijs/linters/commit/7291ad7ae95c6ff6729b0400efc37dba1ca62949))
+* **stylelint-config:** add `all` property to properties-order ([#234](https://github.com/tramvaijs/linters/issues/234)) ([2d53a29](https://github.com/tramvaijs/linters/commit/2d53a29ac9455e032f7cd39f848e2f87c71644a2))
+* **stylelint-config:** decompose to less, angular presets ([#138](https://github.com/tramvaijs/linters/issues/138)) ([7fefd6e](https://github.com/tramvaijs/linters/commit/7fefd6e68f750af4ec9ac9d018fb86c06238efd9))
+* **stylelint-config:** describe angular-less config ([#219](https://github.com/tramvaijs/linters/issues/219)) ([87422e9](https://github.com/tramvaijs/linters/commit/87422e9e7dd806daaede061b970d83d841b3d6dd))
+* **stylelint-config:** expose configs for angular ([0feaafe](https://github.com/tramvaijs/linters/commit/0feaafe82da3b9464aa03d1de0f608ddbeb1a66d))
+* **stylelint-config:** expose configs for stylelint ([1db1b61](https://github.com/tramvaijs/linters/commit/1db1b61a28ad8d0320601500e0b4cfb15cf800c7))
+* **stylelint-config:** expose configs for taiga-ui ([4cbc6b0](https://github.com/tramvaijs/linters/commit/4cbc6b0619805ae052f17005e91017cb0b8c50bb))
+* **stylelint-config:** ignore less functions ([#213](https://github.com/tramvaijs/linters/issues/213)) ([#216](https://github.com/tramvaijs/linters/issues/216)) ([de648a4](https://github.com/tramvaijs/linters/commit/de648a45fba6e972db79ba020f885659c53b14b7))
+* **stylelint-config:** upgrade stylelint ([#187](https://github.com/tramvaijs/linters/issues/187)) ([aec0f7b](https://github.com/tramvaijs/linters/commit/aec0f7bb0333139be7e93c37fbe025155e0ffa6e))
+
+
+### Bug Fixes
+
+* **stylelint-config:** fix missing dependencies for less ([#150](https://github.com/tramvaijs/linters/issues/150)) ([122ff5f](https://github.com/tramvaijs/linters/commit/122ff5fce7754af5e6200a30471198ecb851a16c))
+* **stylelint-config:** ignore `fade` ([#222](https://github.com/tramvaijs/linters/issues/222)) ([c3959bf](https://github.com/tramvaijs/linters/commit/c3959bf2f6fc2a534f8125728d733050be60904c))
+* **stylelint-config:** ignore ng-deep ([#140](https://github.com/tramvaijs/linters/issues/140)) ([331e3f6](https://github.com/tramvaijs/linters/commit/331e3f6abcc8613c10e1e61aa7f2b270250b49f1))
+
+
+
 ### [1.52.1](https://github.com/tramvaijs/linters/compare/v1.52.0...v1.52.1) (2023-04-07)
 
 **Note:** Version bump only for package @tinkoff/stylelint-config
