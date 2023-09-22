@@ -6,11 +6,11 @@
 
 ## Automatic release
 
-All merged PR to `master` branch trigger github actions release and publish workflow.
+All merged PR to `main` branch trigger github actions release and publish workflow.
 
 ## Manual release
 
-- Prepare your release into `master` or `release/*` branch.
+- Prepare your release into `main` or `release/*` branch.
 - Run `npm run version` and look what happens.
   - Or `npm run version -- --no-push` and `git push --follow-tags` you are not sure.
 - Run one of following
