@@ -1,7 +1,7 @@
 module.exports = {
   overrides: [
     {
-      files: ['*.js', '*.ts'],
+      files: ['*.js', '*.ts', '*.tsx'],
       parser: '@typescript-eslint/parser',
       extends: ['eslint-config-airbnb-base/rules/errors'],
       rules: {
