@@ -1,9 +1,9 @@
-import ESlint from 'eslint';
+import { ESLint } from 'eslint';
 import path from 'path';
 
 describe('@tinkoff/eslint-config', () => {
   it('app config working', () => {
-    const cli = new ESlint.CLIEngine({
+    const cli = new ESLint({
       useEslintrc: false,
       cwd: path.join(__dirname, '..'),
       baseConfig: {
@@ -11,14 +11,14 @@ describe('@tinkoff/eslint-config', () => {
       },
     });
 
-    expect(() => cli.executeOnText(`const foo = 'bar';`)).not.toThrow();
+    expect(() => cli.lintText(`const foo = 'bar';`)).not.toThrow();
     expect(() =>
-      cli.executeOnText(`const foo = 'bar';`, 'index.ts')
+      cli.lintText(`const foo = 'bar';`, { filePath: 'index.ts' })
     ).not.toThrow();
   });
 
   it('lib config working', () => {
-    const cli = new ESlint.CLIEngine({
+    const cli = new ESLint({
       useEslintrc: false,
       cwd: path.join(__dirname, '..'),
       baseConfig: {
@@ -26,14 +26,14 @@ describe('@tinkoff/eslint-config', () => {
       },
     });
 
-    expect(() => cli.executeOnText(`const foo = 'bar';`)).not.toThrow();
+    expect(() => cli.lintText(`const foo = 'bar';`)).not.toThrow();
     expect(() =>
-      cli.executeOnText(`const foo = 'bar';`, 'index.ts')
+      cli.lintText(`const foo = 'bar';`, { filePath: 'index.ts' })
     ).not.toThrow();
   });
 
   it('jest config working', () => {
-    const cli = new ESlint.CLIEngine({
+    const cli = new ESLint({
       useEslintrc: false,
       cwd: path.join(__dirname, '..'),
       baseConfig: {
@@ -41,12 +41,12 @@ describe('@tinkoff/eslint-config', () => {
       },
     });
 
-    expect(() => cli.executeOnText(`const foo = 'bar';`)).not.toThrow();
+    expect(() => cli.lintText(`const foo = 'bar';`)).not.toThrow();
     expect(() =>
-      cli.executeOnText(`const foo = 'bar';`, 'index.ts')
+      cli.lintText(`const foo = 'bar';`, { filePath: 'index.ts' })
     ).not.toThrow();
     expect(() =>
-      cli.executeOnText(`const foo = 'bar';`, 'index.spec.ts')
+      cli.lintText(`const foo = 'bar';`, { filePath: 'index.spec.ts' })
     ).not.toThrow();
   });
 });

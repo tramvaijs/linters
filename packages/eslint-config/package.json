@@ -15,24 +15,27 @@
     "url": "https://github.com/tramvaijs/linters.git"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.19.1",
+    "@babel/eslint-parser": "^7.21.3",
     "@babel/eslint-plugin": "^7.19.1",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
-    "eslint": "^7.5.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-import-resolver-webpack": "^0.13.2",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.5.3",
-    "eslint-plugin-prettier": "^3.4.1",
-    "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-sort-class-members": "^1.14.1",
-    "prettier": "2.6.2"
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-sort-class-members": "^1.17.1",
+    "prettier": "2.8.7"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "eslint-formatter-codeframe": "^7.32.1"
   }
 }

@@ -1,9 +1,9 @@
-import ESlint from 'eslint';
+import { ESLint } from 'eslint';
 import path from 'path';
 
 describe('@tinkoff/eslint-config-react', () => {
   it('config working', () => {
-    const cli = new ESlint.CLIEngine({
+    const cli = new ESLint({
       useEslintrc: false,
       cwd: path.join(__dirname, '..'),
       baseConfig: {
@@ -11,9 +11,9 @@ describe('@tinkoff/eslint-config-react', () => {
       },
     });
 
-    expect(() => cli.executeOnText(`const foo = 'bar';`)).not.toThrow();
+    expect(() => cli.lintText(`const foo = 'bar';`)).not.toThrow();
     expect(() =>
-      cli.executeOnText(`const foo = 'bar';`, 'index.ts')
+      cli.lintText(`const foo = 'bar';`, { filePath: 'index.ts' })
     ).not.toThrow();
   });
 });
