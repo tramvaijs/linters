@@ -10,10 +10,9 @@
     "url": "https://github.com/tramvaijs/linters.git"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.7.2",
-    "lodash": "^4.17.21"
+    "@typescript-eslint/eslint-plugin": "^6.7.2"
   },
   "peerDependencies": {
-    "eslint": ">=7"
+    "eslint": ">=8"
   }
 }

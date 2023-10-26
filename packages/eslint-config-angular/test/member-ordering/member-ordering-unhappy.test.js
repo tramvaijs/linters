@@ -1,8 +1,8 @@
-import ESlint from 'eslint';
+import { ESLint } from 'eslint';
 import path from 'path';
 
 describe('member-ordering / unhappy', () => {
-  const cli = new ESlint.CLIEngine({
+  const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
     useEslintrc: false,
     baseConfig: {
@@ -10,12 +10,12 @@ describe('member-ordering / unhappy', () => {
     },
   });
 
-  it('unhappy', () => {
-    const codeframe = cli.getFormatter('codeframe');
-    const report = cli.executeOnFiles([
+  it('unhappy', async () => {
+    const codeframe = await cli.loadFormatter('codeframe');
+    const results = await cli.lintFiles([
       path.join(__dirname, './__fixtures__/member-ordering-unhappy.fixture.ts'),
     ]);
 
-    expect(codeframe(report.results)).toMatchSnapshot();
+    expect(codeframe.format(results)).toMatchSnapshot();
   });
 });

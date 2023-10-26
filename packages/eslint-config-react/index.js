@@ -3,7 +3,7 @@ module.exports = {
     'eslint-config-airbnb/rules/react',
     'eslint-config-airbnb/rules/react-a11y',
     'eslint-config-airbnb/hooks',
-    'prettier/react',
+    'prettier',
   ],
 
   settings: {

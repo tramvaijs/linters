@@ -1,8 +1,8 @@
-import ESlint from 'eslint';
+import { ESLint } from 'eslint';
 import path from 'path';
 
 describe('decorator-position / happy path', () => {
-  const cli = new ESlint.CLIEngine({
+  const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
     useEslintrc: false,
     baseConfig: {
@@ -10,16 +10,16 @@ describe('decorator-position / happy path', () => {
     },
   });
 
-  it('happy', () => {
-    const codeframe = cli.getFormatter('codeframe');
+  it('happy', async () => {
+    const codeframe = await cli.loadFormatter('codeframe');
 
-    const report = cli.executeOnFiles([
+    const results = await cli.lintFiles([
       path.join(
         __dirname,
         './__fixtures__/decorator-position-happy.fixture.ts'
       ),
     ]);
 
-    expect(codeframe(report.results)).toMatchSnapshot();
+    expect(codeframe.format(results)).toMatchSnapshot();
   });
 });
