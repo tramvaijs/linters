@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/tramvaijs/linters/compare/v1.54.4...v2.0.0) (2023-11-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* switch to ESLint v8
+
+Please fix errors and warnings.
+
+### Features
+
+* switch to ESLint v8 ([31e95e3](https://github.com/tramvaijs/linters/commit/31e95e3464b229710cc3fa8822ec988a8d9cbc16))
+
+
+
 ### [1.54.4](https://github.com/tramvaijs/linters/compare/v1.54.3...v1.54.4) (2023-09-25)
 
 

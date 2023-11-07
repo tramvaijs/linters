@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/tramvaijs/linters/compare/v1.54.4...v2.0.0) (2023-11-07)
+
+**Note:** Version bump only for package @tinkoff/stylelint-config
+
+
+
+
+
 ## 1.54.0 (2023-09-22)
 
 
