@@ -66,6 +66,7 @@ configurations
   TS rules
 - `eslint-plugin-prettier` - disable code formatting using eslint tools and transfers all the logic to a prettier, and
   report differences as eslint issues
+- `eslint-plugin-unicorn` — provides specific rules for JS code to make it more consistent
 
 ## Troubleshooting
 
