@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/eslint-config",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "ESLint configs to rule them all",
   "license": "Apache-2.0",
   "keywords": [
@@ -30,6 +30,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-sort-class-members": "^1.17.1",
+    "eslint-plugin-unicorn": "^51.0.1",
     "prettier": "2.8.7"
   },
   "publishConfig": {
