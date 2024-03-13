@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.2](https://github.com/tramvaijs/linters/compare/v2.0.0...v2.0.2) (2024-03-13)
+
+
+### Bug Fixes
+
+* **deps:** bump @tinkoff/eslint-config from 1 to 2, in @tinkoff/eslint-config-angular ([943f5a9](https://github.com/tramvaijs/linters/commit/943f5a9f51f93fd6d0f24fdc827bd1ac3350e2ab))
+
+
+
 ## [2.0.0](https://github.com/tramvaijs/linters/compare/v1.54.4...v2.0.0) (2023-11-07)
 
 
