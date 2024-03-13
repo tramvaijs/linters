@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.3](https://github.com/tramvaijs/linters/compare/v2.0.2...v2.0.3) (2024-03-13)
+
+
+### Bug Fixes
+
+* **eslint-config:** disable plain rules for typescript ([7dfd576](https://github.com/tramvaijs/linters/commit/7dfd576122ad295c00a4bd62be1b1dc14c33318f))
+
+
+
 ## [2.0.0](https://github.com/tramvaijs/linters/compare/v1.54.4...v2.0.0) (2023-11-07)
 
 
