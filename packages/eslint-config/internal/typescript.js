@@ -117,6 +117,7 @@ module.exports = {
           },
         ],
         '@typescript-eslint/ban-ts-comment': 'warn',
+        'no-empty-function': 'off',
         '@typescript-eslint/no-empty-function': 'warn',
         // standard no-unused-expressions don't understand optional chaining from ts
         'no-unused-expressions': 'off',

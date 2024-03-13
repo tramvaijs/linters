@@ -29,6 +29,7 @@ module.exports = {
      * @note: [*.js, *.ts], exclude *.d.ts
      */
     'no-param-reassign': 'off',
+    'default-param-last': 'off',
     'prefer-destructuring': 'off',
     'no-case-declarations': 'error',
     'no-console': ['error', { allow: ['info', 'assert', 'warn', 'error'] }],
