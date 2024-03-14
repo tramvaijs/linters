@@ -22,6 +22,6 @@
     "prettier": "2.8.7",
     "prettier-package-json": "^2.6.3",
     "prettier-plugin-organize-attributes": "~0.0.5",
-    "sort-package-json": "^1.55.0"
+    "sort-package-json": "^2.6.0"
   }
 }
