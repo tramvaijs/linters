@@ -50,7 +50,7 @@ module.exports = {
           require('path').resolve(
             __dirname,
             'plugins',
-            'prettier-plugin-sort-package'
+            'prettier-plugin-sort-package.js'
           ),
         ],
       },
