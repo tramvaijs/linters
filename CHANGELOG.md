@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.4](https://github.com/tramvaijs/linters/compare/v2.0.3...v2.0.4) (2024-03-15)
+
+
+### Bug Fixes
+
+* **prettier-config:** add support ECMA modules ([#22](https://github.com/tramvaijs/linters/issues/22)) ([3ab5fbb](https://github.com/tramvaijs/linters/commit/3ab5fbbfcd6c08d59421ffb2c2272188076478b7))
+
+
+
 ### [2.0.3](https://github.com/tramvaijs/linters/compare/v2.0.2...v2.0.3) (2024-03-13)
 
 
