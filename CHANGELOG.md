@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.5](https://github.com/tramvaijs/linters/compare/v2.0.4...v2.0.5) (2024-03-15)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** disable semantic and validation issues checks ([#23](https://github.com/tramvaijs/linters/issues/23)) ([a89dc31](https://github.com/tramvaijs/linters/commit/a89dc31b94d89979c4619c035a0d48febf33c34c))
+
+
+
 ### [2.0.4](https://github.com/tramvaijs/linters/compare/v2.0.3...v2.0.4) (2024-03-15)
 
 
