@@ -8,7 +8,6 @@ module.exports = {
       parserOptions: {
         sourceType: 'module',
         errorOnUnknownASTType: true,
-        errorOnTypeScriptSyntacticAndSemanticIssues: true,
         warnOnUnsupportedTypeScriptVersion: false,
         ecmaVersion: 6,
       },
