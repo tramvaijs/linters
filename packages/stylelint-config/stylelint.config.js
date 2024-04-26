@@ -2,28 +2,11 @@ module.exports = {
   extends: 'stylelint-config-standard',
   plugins: ['stylelint-order'],
   rules: {
-    'at-rule-name-space-after': 'always',
-    'block-opening-brace-newline-after': 'always',
     'color-named': 'never',
     'declaration-block-no-redundant-longhand-properties': null,
     'declaration-empty-line-before': 'never',
-    indentation: [
-      4,
-      {
-        indentInsideParens: 'once-at-root-twice-in-block',
-        severity: 'error',
-      },
-    ],
-    'max-empty-lines': 2,
-    'max-line-length': [
-      80,
-      {
-        ignore: ['non-comments'],
-      },
-    ],
     'no-descending-specificity': null,
     'no-duplicate-selectors': true,
-    'number-leading-zero': 'never',
     'rule-empty-line-before': [
       'always',
       {
@@ -40,7 +23,6 @@ module.exports = {
         ignoreTypes: ['/^/deep/'],
       },
     ],
-    'string-quotes': 'single',
     'value-keyword-case': 'lower',
     'value-no-vendor-prefix': true,
     'order/order': [
