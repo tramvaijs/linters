@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['./stylelint.config.js', 'stylelint-config-prettier'],
+  extends: ['./stylelint.config.js'],
   plugins: ['stylelint-order', 'stylelint-no-px'],
   rules: {
     'order/properties-order': [
