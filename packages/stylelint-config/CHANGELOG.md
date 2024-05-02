@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.1](https://github.com/tramvaijs/linters/compare/v3.0.0...v3.0.1) (2024-05-02)
+
+
+### Bug Fixes
+
+* **stylelint-config:** fix extends ([90d685f](https://github.com/tramvaijs/linters/commit/90d685fd06084132df7979ce9237bdf9177c8011))
+
+
+
 ## [3.0.0](https://github.com/tramvaijs/linters/compare/v2.0.5...v3.0.0) (2024-05-02)
 
 
