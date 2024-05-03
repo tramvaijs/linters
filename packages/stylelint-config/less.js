@@ -59,5 +59,9 @@ module.exports = {
         ],
       },
     ],
+    'media-query-no-invalid': null, // https://github.com/stylelint/stylelint/issues/7163
+    'import-notation': null, // all imports are wrapped in url, this is needed in css, but unnecessary in less
+    'selector-not-notation': `simple`, // backward compatibility with our current browserslists
+    'media-feature-range-notation': `prefix`, // backward compatibility with our current browserslists
   },
 };
