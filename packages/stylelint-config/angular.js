@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['./stylelint.config.js'],
-  plugins: ['stylelint-order', 'stylelint-no-px'],
+  plugins: ['stylelint-order', '@miller-svt/stylelint-no-px'],
   rules: {
     'order/properties-order': [
       [
@@ -55,7 +55,7 @@ module.exports = {
         ignorePseudoElements: ['ng-deep'],
       },
     ],
-    'meowtec/no-px': [
+    'MillerSvt/no-px': [
       true,
       {
         ignore: [
@@ -73,6 +73,7 @@ module.exports = {
           '4px',
           '5px',
         ],
+        remSize: 16,
       },
     ],
   },
