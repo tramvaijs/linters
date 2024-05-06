@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.0](https://github.com/tramvaijs/linters/compare/v3.0.2...v3.1.0) (2024-05-06)
+
+
+### Features
+
+* **stylelint-config:** replace stylelint-no-px to @miller-svt/stylelint-no-px ([e34e0fd](https://github.com/tramvaijs/linters/commit/e34e0fd505d4e6838dec5b2f4cd01cf2f411da32))
+
+
+
 ### [3.0.2](https://github.com/tramvaijs/linters/compare/v3.0.1...v3.0.2) (2024-05-03)
 
 
