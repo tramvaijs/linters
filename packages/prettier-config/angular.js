@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   $schema: 'https://json.schemastore.org/prettierrc',
   htmlWhitespaceSensitivity: 'ignore',
   printWidth: 120,
@@ -13,8 +13,8 @@ module.exports = {
   arrowParens: 'avoid',
   plugins: [
     // https://github.com/prettier/prettier-vscode/issues/2259#issuecomment-952950119
-    require.resolve('prettier-plugin-organize-attributes'),
-    require.resolve('@prettier/plugin-xml'),
+    import.meta.resolve('prettier-plugin-organize-attributes'),
+    import.meta.resolve('@prettier/plugin-xml'),
   ],
   attributeGroups: [
     // prettier-plugin-organize-attribute
@@ -47,11 +47,7 @@ module.exports = {
       options: {
         parser: 'json-stringify',
         plugins: [
-          require('path').resolve(
-            __dirname,
-            'plugins',
-            'prettier-plugin-sort-package.js'
-          ),
+          import.meta.resolve('./plugins/prettier-plugin-sort-package.js'),
         ],
       },
     },
