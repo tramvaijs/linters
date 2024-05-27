@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/tramvaijs/linters/compare/v3.1.1...v4.0.0) (2024-05-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **prettier-config:** upgrade prettier to v3
+
+### Features
+
+* **eslint-config:** add prettier v3 support ([acb4e2b](https://github.com/tramvaijs/linters/commit/acb4e2b9c0e1690a1af70a07c71eb94dad575465))
+* **prettier-config:** upgrade prettier to v3 ([d42ca2a](https://github.com/tramvaijs/linters/commit/d42ca2a92c6529fb0675cafa34f919e4ef311da9))
+
+
+
 ### [3.1.1](https://github.com/tramvaijs/linters/compare/v3.1.0...v3.1.1) (2024-05-24)
 
 
