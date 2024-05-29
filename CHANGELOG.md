@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.0](https://github.com/tramvaijs/linters/compare/v4.0.0...v4.1.0) (2024-05-29)
+
+
+### Features
+
+* **eslint-config-react:** add prettier v3 support ([78f3cc2](https://github.com/tramvaijs/linters/commit/78f3cc2ab3d1f6d1110b3a36a08ce447ea3a53f6))
+
+
+
 ## [4.0.0](https://github.com/tramvaijs/linters/compare/v3.1.1...v4.0.0) (2024-05-27)
 
 
