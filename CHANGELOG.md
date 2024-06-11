@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.1](https://github.com/tramvaijs/linters/compare/v4.1.0...v4.1.1) (2024-06-11)
+
+
+### Bug Fixes
+
+* **eslint-config:** move prettier back to deps ([050843a](https://github.com/tramvaijs/linters/commit/050843a4a95476402c4a5338e0c261b0866401b2))
+
+
+
 ## [4.1.0](https://github.com/tramvaijs/linters/compare/v4.0.0...v4.1.0) (2024-05-29)
 
 
