@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.2](https://github.com/tramvaijs/linters/compare/v4.1.1...v4.1.2) (2024-08-06)
+
+
+### Bug Fixes
+
+* wide typescript-eslint to 7.x versions ([2d662ac](https://github.com/tramvaijs/linters/commit/2d662ac590b10c2bbf169e462adfafff1825dd4e))
+
+
+
 ### [4.1.1](https://github.com/tramvaijs/linters/compare/v4.1.0...v4.1.1) (2024-06-11)
 
 
