@@ -12,9 +12,8 @@ export default {
   bracketSpacing: false,
   arrowParens: 'avoid',
   plugins: [
-    // https://github.com/prettier/prettier-vscode/issues/2259#issuecomment-952950119
-    import.meta.resolve('prettier-plugin-organize-attributes'),
-    import.meta.resolve('@prettier/plugin-xml'),
+    'prettier-plugin-organize-attributes',
+    '@prettier/plugin-xml',
   ],
   attributeGroups: [
     // prettier-plugin-organize-attribute
@@ -47,7 +46,7 @@ export default {
       options: {
         parser: 'json-stringify',
         plugins: [
-          import.meta.resolve('./plugins/prettier-plugin-sort-package.js'),
+          `${import.meta.dirname}/plugins/prettier-plugin-sort-package.js`,
         ],
       },
     },
