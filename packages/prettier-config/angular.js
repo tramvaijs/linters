@@ -46,7 +46,7 @@ export default {
       options: {
         parser: 'json-stringify',
         plugins: [
-          `${import.meta.dirname}/plugins/prettier-plugin-sort-package.js`,
+          '@tinkoff/prettier-config/plugins/prettier-plugin-sort-package.js',
         ],
       },
     },
