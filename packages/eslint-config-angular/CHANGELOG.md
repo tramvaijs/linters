@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.0](https://github.com/tramvaijs/linters/compare/v4.1.3...v4.2.0) (2024-12-28)
+
+
+### Features
+
+* **eslint-config-angular:** sync @tinkoff/eslint-config major version ([92df38a](https://github.com/tramvaijs/linters/commit/92df38a11db12b29753a3323c1597f319b91f234))
+
+
+
 ## [4.0.0](https://github.com/tramvaijs/linters/compare/v3.1.1...v4.0.0) (2024-05-27)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-angular
