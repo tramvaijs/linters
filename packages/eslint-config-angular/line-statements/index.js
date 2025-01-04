@@ -3,7 +3,7 @@ module.exports = {
     {
       files: ['*.ts'],
       parser: '@typescript-eslint/parser',
-      plugins: ['@typescript-eslint'],
+      plugins: ['@typescript-eslint', '@stylistic'],
       rules: {
         'lines-around-comment': [
           'error',
@@ -24,13 +24,13 @@ module.exports = {
           },
         ],
         'lines-between-class-members': 'off',
-        '@typescript-eslint/lines-between-class-members': [
+        '@stylistic/lines-between-class-members': [
           'error',
           'always',
           { exceptAfterSingleLine: true, exceptAfterOverload: true },
         ],
         'padding-line-between-statements': 'off',
-        '@typescript-eslint/padding-line-between-statements': [
+        '@stylistic/padding-line-between-statements': [
           'error',
           { blankLine: 'always', prev: '*', next: 'block' },
           { blankLine: 'always', prev: 'block', next: '*' },

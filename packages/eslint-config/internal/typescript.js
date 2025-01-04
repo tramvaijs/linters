@@ -48,7 +48,9 @@ module.exports = {
             ],
           },
         ],
-        '@typescript-eslint/ban-types': [
+        '@typescript-eslint/no-unsafe-function-type': 'error',
+        '@typescript-eslint/no-wrapper-object-types': 'error',
+        '@typescript-eslint/no-restricted-types': [
           'error',
           {
             types: {
@@ -64,7 +66,6 @@ module.exports = {
                 fixWith: 'Record<string, any>',
               },
             },
-            extendDefaults: false,
           },
         ],
         '@typescript-eslint/no-extraneous-class': [
