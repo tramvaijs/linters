@@ -7,7 +7,7 @@ ESlint plugin includes Tinkoff rules for Angular applications. Designed to use w
 Install from npm
 
 ```bash
-npm i --save-dev @tinkoff/eslint-config @tinkoff/eslint-config-angular
+npm i --save-dev @tinkoff/eslint-config @tinkoff/eslint-config-angular @stylistic/eslint-plugin
 ```
 
 Then, need to include `recommendation` configurations sets to `.eslintrc`. We need to choose base configuration, and any
