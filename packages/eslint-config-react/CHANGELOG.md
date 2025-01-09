@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/tramvaijs/linters/compare/v4.2.0...v5.0.0) (2025-01-09)
+
+**Note:** Version bump only for package @tinkoff/eslint-config-react
+
+
+
+
+
 ### [4.1.3](https://github.com/tramvaijs/linters/compare/v4.1.2...v4.1.3) (2024-09-13)
 
 **Note:** Version bump only for package @tinkoff/eslint-config-react

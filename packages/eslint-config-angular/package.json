@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/eslint-config-angular",
-  "version": "4.2.0",
+  "version": "5.0.0",
   "description": "ESLint configs for Angular apps",
   "license": "Apache-2.0",
   "keywords": [
@@ -26,8 +26,8 @@
     "eslint-plugin-unicorn": "^44.0.2"
   },
   "peerDependencies": {
-    "@tinkoff/eslint-config": "^4.0.0",
     "@stylistic/eslint-plugin": "^2.0.0",
+    "@tinkoff/eslint-config": "^4.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "eslint": "^8.38.0",
     "eslint-plugin-import": "^2.27.5",
