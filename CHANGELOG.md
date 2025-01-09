@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.1](https://github.com/tramvaijs/linters/compare/v5.0.0...v5.0.1) (2025-01-09)
+
+
+### Bug Fixes
+
+* support [@typescript-eslint](https://github.com/typescript-eslint) v8 by eslint-plugin-jest ([86e7c7d](https://github.com/tramvaijs/linters/commit/86e7c7da6c00153507d7338ad740f59e80a752c7))
+
+
+
 ## [5.0.0](https://github.com/tramvaijs/linters/compare/v4.2.0...v5.0.0) (2025-01-09)
 
 
