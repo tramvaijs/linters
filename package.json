@@ -41,7 +41,7 @@
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
     "babel-jest": "^29.5.0",
-    "concurrently": "5.0.1",
+    "concurrently": "9.1.2",
     "conventional-changelog-conventionalcommits": "^4.2.3",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^9.1.0",
