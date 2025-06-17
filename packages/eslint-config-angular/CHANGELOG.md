@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.0](https://github.com/tramvaijs/linters/compare/v5.0.1...v5.1.0) (2025-06-17)
+
+
+### Features
+
+* **eslint-config-angular:** sync major version ([0a1d2d5](https://github.com/tramvaijs/linters/commit/0a1d2d56780dab9f531381a6b7baf1c419299149))
+
+
+
 ## [5.0.0](https://github.com/tramvaijs/linters/compare/v4.2.0...v5.0.0) (2025-01-09)
 
 
