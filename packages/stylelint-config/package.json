@@ -16,11 +16,11 @@
     "access": "public"
   },
   "dependencies": {
-    "postcss": "^8.4.12",
+    "postcss": "^8.5.6",
     "postcss-less": "^6.0.0",
-    "stylelint": "^16.4.0",
-    "stylelint-config-standard": "^36.0.0",
-    "stylelint-no-px": "^2.0.0",
-    "stylelint-order": "^6.0.4"
+    "stylelint": "^16.25.0",
+    "stylelint-config-standard": "^39.0.1",
+    "stylelint-no-px": "^2.1.0",
+    "stylelint-order": "^7.0.0"
   }
 }
