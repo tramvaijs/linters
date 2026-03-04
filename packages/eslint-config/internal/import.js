@@ -4,7 +4,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.mjs', '.ts'],
+        extensions: ['.js', '.mjs', '.cjs', '.ts'],
       },
       typescript: {},
       webpack: {},
