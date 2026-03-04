@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.0](https://github.com/tramvaijs/linters/compare/v5.1.0...v5.2.0) (2026-03-04)
+
+
+### Features
+
+* **eslint-config:** support mjs extension for resolver ([311578e](https://github.com/tramvaijs/linters/commit/311578e57a578cb942fc2f88135850620ae0e591))
+
+
+
 ## [5.1.0](https://github.com/tramvaijs/linters/compare/v5.0.1...v5.1.0) (2025-06-17)
 
 
