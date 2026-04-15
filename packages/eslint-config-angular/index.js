@@ -1,3 +1,1 @@
-module.exports = {
-  extends: ['./recommended/index.js'],
-};
+module.exports = [...require('./recommended/index')];

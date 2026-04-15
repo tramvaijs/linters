@@ -57,7 +57,7 @@ configurations
 
 `@tinkoff/eslint-config/app` and `@tinkoff/eslint-config/lib` include:
 
-- `eslint-config-airbnb` - common and popular configuration
+- `eslint-config-airbnb-extended` - Updated version of common and popular configuration `eslint-config-airbnb`
 - `eslint-plugin-eslint-comments` - validate `eslint` comments
 - `eslint-plugin-import` - validate proper imports
 - `eslint-plugin-promise` - enforce best practices for promises

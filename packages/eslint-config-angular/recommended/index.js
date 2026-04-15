@@ -1,3 +1,5 @@
-module.exports = {
-  extends: ['./base.js', './base-typescript.js', './extraneous-class.js'],
-};
+module.exports = [
+  ...require('./base'),
+  ...require('./base-typescript'),
+  ...require('./extraneous-class'),
+];

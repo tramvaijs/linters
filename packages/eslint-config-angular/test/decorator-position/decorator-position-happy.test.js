@@ -4,10 +4,8 @@ import path from 'path';
 describe('decorator-position / happy path', () => {
   const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
-    useEslintrc: false,
-    baseConfig: {
-      extends: ['../decorator-position'],
-    },
+    overrideConfigFile: true,
+    overrideConfig: require('../../decorator-position'),
   });
 
   it('happy', async () => {

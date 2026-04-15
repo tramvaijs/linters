@@ -1,43 +1,49 @@
-module.exports = {
-  overrides: [
-    {
-      files: ['*.ts'],
-      parser: '@typescript-eslint/parser',
-      plugins: ['@typescript-eslint'],
-      extends: ['plugin:@typescript-eslint/eslint-recommended'],
+const tsPlugin = require('@typescript-eslint/eslint-plugin');
+const tsParser = require('@typescript-eslint/parser');
+
+module.exports = [
+  {
+    files: ['**/*.ts'],
+    rules: {
+      ...tsPlugin.configs['eslint-recommended'].overrides[0].rules,
+    },
+  },
+  {
+    files: ['**/*.ts'],
+    languageOptions: {
+      parser: tsParser,
       parserOptions: {
         sourceType: 'module',
         errorOnUnknownASTType: true,
         warnOnUnsupportedTypeScriptVersion: false,
         ecmaVersion: 6,
       },
-      rules: {
-        /**
-         * @note: you must disable the base rule
-         * as it can report incorrect errors in @typescript-eslint
-         */
-        'no-useless-constructor': 'off',
-        'prefer-destructuring': 'off',
-        '@typescript-eslint/no-useless-constructor': ['error'],
-        '@typescript-eslint/no-inferrable-types': [
-          'error',
-          { ignoreParameters: true },
-        ],
-        '@typescript-eslint/prefer-readonly': ['error'],
-        '@typescript-eslint/explicit-member-accessibility': [
-          'error',
-          { accessibility: 'no-public' },
-        ],
-        'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': [
-          'error',
-          { argsIgnorePattern: '^_' },
-        ],
-        '@typescript-eslint/array-type': [
-          'error',
-          { default: 'array-simple', readonly: 'array-simple' },
-        ],
-      },
     },
-  ],
-};
+    plugins: {
+      '@typescript-eslint': tsPlugin,
+    },
+    rules: {
+      'no-useless-constructor': 'off',
+      'prefer-destructuring': 'off',
+      '@typescript-eslint/no-useless-constructor': ['error'],
+      '@typescript-eslint/no-inferrable-types': [
+        'error',
+        { ignoreParameters: true },
+      ],
+      '@typescript-eslint/prefer-readonly': ['error'],
+      '@typescript-eslint/explicit-member-accessibility': [
+        'error',
+        { accessibility: 'no-public' },
+      ],
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_' },
+      ],
+      '@typescript-eslint/array-type': [
+        'error',
+        { default: 'array-simple', readonly: 'array-simple' },
+      ],
+    },
+  },
+];

@@ -4,10 +4,8 @@ import path from 'path';
 describe('member-ordering / happy path', () => {
   const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
-    useEslintrc: false,
-    baseConfig: {
-      extends: ['../member-ordering'],
-    },
+    overrideConfigFile: true,
+    overrideConfig: require('../../member-ordering'),
   });
 
   it('happy', async () => {

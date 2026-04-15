@@ -13,6 +13,6 @@
     "@typescript-eslint/eslint-plugin": "^8.0.0"
   },
   "peerDependencies": {
-    "eslint": ">=8"
+    "eslint": "^9"
   }
 }

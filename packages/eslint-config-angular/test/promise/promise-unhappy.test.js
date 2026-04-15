@@ -4,13 +4,17 @@ import path from 'path';
 describe('promise / unhappy', () => {
   const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
-    useEslintrc: false,
-    baseConfig: {
-      extends: ['../promise'],
-      parserOptions: {
-        project: 'tsconfig.json',
+    overrideConfigFile: true,
+    overrideConfig: [
+      ...require('../../promise'),
+      {
+        languageOptions: {
+          parserOptions: {
+            project: 'tsconfig.json',
+          },
+        },
       },
-    },
+    ],
   });
 
   it('unhappy', async () => {

@@ -1,16 +1,19 @@
-module.exports = {
-  extends: [
-    './internal/base',
-    './internal/sort-class-members',
-    './internal/import',
-    './internal/promise',
-    './internal/test-files',
-    './internal/typescript',
-    './internal/prettier',
-  ],
+const globals = require('globals');
 
-  env: {
-    browser: true,
-    node: true,
+module.exports = [
+  ...require('./internal/base'),
+  ...require('./internal/sort-class-members'),
+  ...require('./internal/import'),
+  ...require('./internal/promise'),
+  ...require('./internal/test-files'),
+  ...require('./internal/typescript'),
+  ...require('./internal/prettier'),
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
   },
-};
+];

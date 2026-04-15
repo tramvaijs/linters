@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`member-ordering / unhappy unhappy 1`] = `
+exports[`member-ordering / unhappy path unhappy 1`] = `
 "error: Member a3 should be declared before all private static field definitions (@typescript-eslint/member-ordering) at packages/eslint-config-angular/test/member-ordering/__fixtures__/member-ordering-unhappy.fixture.ts:7:3:
    5 |   private static readonly a1: string;
    6 |   private a2 = 'someString';

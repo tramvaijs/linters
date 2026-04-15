@@ -1,13 +1,11 @@
 import { ESLint } from 'eslint';
 import path from 'path';
 
-describe('member-ordering / unhappy', () => {
+describe('member-ordering / unhappy path', () => {
   const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
-    useEslintrc: false,
-    baseConfig: {
-      extends: ['../member-ordering'],
-    },
+    overrideConfigFile: true,
+    overrideConfig: require('../../member-ordering'),
   });
 
   it('unhappy', async () => {
