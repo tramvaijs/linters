@@ -4,10 +4,8 @@ import path from 'path';
 describe('imports / unhappy path', () => {
   const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
-    useEslintrc: false,
-    baseConfig: {
-      extends: ['../imports'],
-    },
+    overrideConfigFile: true,
+    overrideConfig: require('../../imports'),
   });
 
   it('unhappy', async () => {

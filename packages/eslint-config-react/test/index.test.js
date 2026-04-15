@@ -2,18 +2,16 @@ import { ESLint } from 'eslint';
 import path from 'path';
 
 describe('@tinkoff/eslint-config-react', () => {
-  it('config working', () => {
+  it('config working', async () => {
     const cli = new ESLint({
-      useEslintrc: false,
+      overrideConfigFile: true,
+      overrideConfig: require('../index'),
       cwd: path.join(__dirname, '..'),
-      baseConfig: {
-        extends: ['./index'],
-      },
     });
 
-    expect(() => cli.lintText(`const foo = 'bar';`)).not.toThrow();
-    expect(() =>
+    await expect(cli.lintText(`const foo = 'bar';`)).resolves.toBeDefined();
+    await expect(
       cli.lintText(`const foo = 'bar';`, { filePath: 'index.ts' })
-    ).not.toThrow();
+    ).resolves.toBeDefined();
   });
 });

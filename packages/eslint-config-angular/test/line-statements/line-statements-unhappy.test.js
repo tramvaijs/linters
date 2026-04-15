@@ -1,13 +1,11 @@
 import { ESLint } from 'eslint';
 import path from 'path';
 
-describe('line statements / unhappy path', () => {
+describe('line-statements / unhappy path', () => {
   const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
-    useEslintrc: false,
-    baseConfig: {
-      extends: ['../line-statements'],
-    },
+    overrideConfigFile: true,
+    overrideConfig: require('../../line-statements'),
   });
 
   it('unhappy', async () => {

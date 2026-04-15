@@ -2,51 +2,45 @@ import { ESLint } from 'eslint';
 import path from 'path';
 
 describe('@tinkoff/eslint-config', () => {
-  it('app config working', () => {
+  it('app config working', async () => {
     const cli = new ESLint({
-      useEslintrc: false,
+      overrideConfigFile: true,
+      overrideConfig: require('../app'),
       cwd: path.join(__dirname, '..'),
-      baseConfig: {
-        extends: ['./app'],
-      },
     });
 
-    expect(() => cli.lintText(`const foo = 'bar';`)).not.toThrow();
-    expect(() =>
+    await expect(cli.lintText(`const foo = 'bar';`)).resolves.toBeDefined();
+    await expect(
       cli.lintText(`const foo = 'bar';`, { filePath: 'index.ts' })
-    ).not.toThrow();
+    ).resolves.toBeDefined();
   });
 
-  it('lib config working', () => {
+  it('lib config working', async () => {
     const cli = new ESLint({
-      useEslintrc: false,
+      overrideConfigFile: true,
+      overrideConfig: require('../lib'),
       cwd: path.join(__dirname, '..'),
-      baseConfig: {
-        extends: ['./lib'],
-      },
     });
 
-    expect(() => cli.lintText(`const foo = 'bar';`)).not.toThrow();
-    expect(() =>
+    await expect(cli.lintText(`const foo = 'bar';`)).resolves.toBeDefined();
+    await expect(
       cli.lintText(`const foo = 'bar';`, { filePath: 'index.ts' })
-    ).not.toThrow();
+    ).resolves.toBeDefined();
   });
 
-  it('jest config working', () => {
+  it('jest config working', async () => {
     const cli = new ESLint({
-      useEslintrc: false,
+      overrideConfigFile: true,
+      overrideConfig: require('../jest'),
       cwd: path.join(__dirname, '..'),
-      baseConfig: {
-        extends: ['./jest'],
-      },
     });
 
-    expect(() => cli.lintText(`const foo = 'bar';`)).not.toThrow();
-    expect(() =>
+    await expect(cli.lintText(`const foo = 'bar';`)).resolves.toBeDefined();
+    await expect(
       cli.lintText(`const foo = 'bar';`, { filePath: 'index.ts' })
-    ).not.toThrow();
-    expect(() =>
+    ).resolves.toBeDefined();
+    await expect(
       cli.lintText(`const foo = 'bar';`, { filePath: 'index.spec.ts' })
-    ).not.toThrow();
+    ).resolves.toBeDefined();
   });
 });

@@ -1,7 +1,1 @@
-module.exports = {
-  extends: ['./index'],
-
-  plugins: [],
-
-  rules: {},
-};
+module.exports = [...require('./index')];
