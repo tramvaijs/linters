@@ -1,8 +1,8 @@
-const tsPlugin = require('@typescript-eslint/eslint-plugin');
-const tsParser = require('@typescript-eslint/parser');
-const decoratorPositionPlugin = require('eslint-plugin-decorator-position');
+import tsPlugin from '@typescript-eslint/eslint-plugin';
+import tsParser from '@typescript-eslint/parser';
+import decoratorPositionPlugin from 'eslint-plugin-decorator-position';
 
-module.exports = [
+export default [
   {
     files: ['**/*.ts'],
     languageOptions: {

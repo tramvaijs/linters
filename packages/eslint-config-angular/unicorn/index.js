@@ -1,11 +1,8 @@
-const tsPlugin = require('@typescript-eslint/eslint-plugin');
-const tsParser = require('@typescript-eslint/parser');
-// eslint-plugin-unicorn v50+ uses ES modules; handle both CJS and ESM interop
-const unicornModule = require('eslint-plugin-unicorn');
+import tsPlugin from '@typescript-eslint/eslint-plugin';
+import tsParser from '@typescript-eslint/parser';
+import unicornPlugin from 'eslint-plugin-unicorn';
 
-const unicornPlugin = unicornModule.default || unicornModule;
-
-module.exports = [
+export default [
   {
     files: ['**/*.ts'],
     languageOptions: {

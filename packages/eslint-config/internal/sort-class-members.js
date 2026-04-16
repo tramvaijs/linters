@@ -1,6 +1,6 @@
-const sortClassMembersPlugin = require('eslint-plugin-sort-class-members');
+import sortClassMembersPlugin from 'eslint-plugin-sort-class-members';
 
-module.exports = [
+export default [
   sortClassMembersPlugin.configs['flat/recommended'],
   {
     rules: {

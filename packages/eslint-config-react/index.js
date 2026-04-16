@@ -1,21 +1,13 @@
-const reactPlugin = require('eslint-plugin-react');
-const reactHooksPlugin = require('eslint-plugin-react-hooks');
-const jsxA11yPlugin = require('eslint-plugin-jsx-a11y');
-const prettierConfig = require('eslint-config-prettier');
-const globals = require('globals');
-const { rules } = require('eslint-config-airbnb-extended/legacy');
+import prettierConfig from 'eslint-config-prettier';
+import globals from 'globals';
+import { rules } from 'eslint-config-airbnb-extended/legacy';
 
-module.exports = [
+export default [
   rules.react.base,
   rules.react.jsxA11y,
   rules.react.hooks,
   prettierConfig,
   {
-    plugins: {
-      react: reactPlugin,
-      'react-hooks': reactHooksPlugin,
-      'jsx-a11y': jsxA11yPlugin,
-    },
     settings: {
       react: {
         version: 'detect',

@@ -1,7 +1,7 @@
-const tsPlugin = require('@typescript-eslint/eslint-plugin');
-const tsParser = require('@typescript-eslint/parser');
+import tsPlugin from '@typescript-eslint/eslint-plugin';
+import tsParser from '@typescript-eslint/parser';
 
-module.exports = [
+export default [
   // Turns off base ESLint rules that TypeScript handles better (applies to TS files)
   {
     files: ['**/*.ts', '**/*.tsx'],

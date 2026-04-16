@@ -1,8 +1,8 @@
-const tsPlugin = require('@typescript-eslint/eslint-plugin');
-const tsParser = require('@typescript-eslint/parser');
-const sortClassMembersPlugin = require('eslint-plugin-sort-class-members');
+import tsPlugin from '@typescript-eslint/eslint-plugin';
+import tsParser from '@typescript-eslint/parser';
+import sortClassMembersPlugin from 'eslint-plugin-sort-class-members';
 
-module.exports = [
+export default [
   {
     files: ['**/*.ts'],
     languageOptions: {

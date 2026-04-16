@@ -1,11 +1,17 @@
 import { ESLint } from 'eslint';
 import path from 'path';
+import { fileURLToPath } from 'url';
+import appConfig from '../app.js';
+import libConfig from '../lib.js';
+import jestConfig from '../jest.js';
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 describe('@tinkoff/eslint-config', () => {
   it('app config working', async () => {
     const cli = new ESLint({
       overrideConfigFile: true,
-      overrideConfig: require('../app'),
+      overrideConfig: appConfig,
       cwd: path.join(__dirname, '..'),
     });
 
@@ -18,7 +24,7 @@ describe('@tinkoff/eslint-config', () => {
   it('lib config working', async () => {
     const cli = new ESLint({
       overrideConfigFile: true,
-      overrideConfig: require('../lib'),
+      overrideConfig: libConfig,
       cwd: path.join(__dirname, '..'),
     });
 
@@ -31,7 +37,7 @@ describe('@tinkoff/eslint-config', () => {
   it('jest config working', async () => {
     const cli = new ESLint({
       overrideConfigFile: true,
-      overrideConfig: require('../jest'),
+      overrideConfig: jestConfig,
       cwd: path.join(__dirname, '..'),
     });
 

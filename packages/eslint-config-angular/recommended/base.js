@@ -1,8 +1,8 @@
-const tsParser = require('@typescript-eslint/parser');
-const js = require('@eslint/js');
-const globals = require('globals');
+import tsParser from '@typescript-eslint/parser';
+import js from '@eslint/js';
+import globals from 'globals';
 
-module.exports = [
+export default [
   // Global ignore patterns
   {
     ignores: [

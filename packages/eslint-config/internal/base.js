@@ -1,10 +1,9 @@
-const eslintCommentsPlugin = require('@eslint-community/eslint-plugin-eslint-comments');
-const babelParser = require('@babel/eslint-parser');
-const { configs } = require('eslint-config-airbnb-extended/legacy');
+import eslintCommentsPlugin from '@eslint-community/eslint-plugin-eslint-comments';
+import babelParser from '@babel/eslint-parser';
+import { configs } from 'eslint-config-airbnb-extended/legacy';
+import errorsConfig from '../errors/index.js';
 
-const errorsConfig = require('../errors/index');
-
-module.exports = [
+export default [
   ...configs.base.recommended,
   ...errorsConfig,
   {
