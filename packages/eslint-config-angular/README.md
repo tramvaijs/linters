@@ -1,6 +1,10 @@
 # @tinkoff/eslint-config-angular
 
-ESlint plugin includes Tinkoff rules for Angular applications. Designed to use with `@tinkoff/eslint-config`.
+ESLint config includes Tinkoff rules for Angular applications. Designed to use with `@tinkoff/eslint-config`.
+
+## Requirements
+
+ESLint >= 9 is required.
 
 ## Usage
 
@@ -10,40 +14,55 @@ Install from npm
 npm i --save-dev @tinkoff/eslint-config @tinkoff/eslint-config-angular @stylistic/eslint-plugin
 ```
 
-Then, need to include `recommendation` configurations sets to `.eslintrc`. We need to choose base configuration, and any
-necessary additional configs:
+Create `eslint.config.js` at the project root. Include the recommended configuration sets — choose a base configuration and any necessary additional configs:
 
-```json5
-{
-  extends: ['@tinkoff/eslint-config/app', '@tinkoff/eslint-config-angular'],
-}
+```js
+import tinkoffConfig from '@tinkoff/eslint-config/app';
+import angularConfig from '@tinkoff/eslint-config-angular';
+
+export default [...tinkoffConfig, ...angularConfig];
 ```
 
-You can also include `optional` configurations, however, you are responsible for implementing these rules in your project:
+You can also include `optional` configurations. You are responsible for implementing these rules in your project:
 
-```json5
-{
-  extends: [
-    // recommended
-    '@tinkoff/eslint-config/app',
-    '@tinkoff/eslint-config-angular',
+```js
+import tinkoffConfig from '@tinkoff/eslint-config/app';
+import angularConfig from '@tinkoff/eslint-config-angular';
 
-    // optional
-    '@tinkoff/eslint-config-angular/rxjs',
-    '@tinkoff/eslint-config-angular/promise',
-    '@tinkoff/eslint-config-angular/imports',
-    '@tinkoff/eslint-config-angular/unicorn',
-    '@tinkoff/eslint-config-angular/html-eslint',
-    '@tinkoff/eslint-config-angular/file-progress',
-    '@tinkoff/eslint-config-angular/line-statements',
-    '@tinkoff/eslint-config-angular/member-ordering',
-    '@tinkoff/eslint-config-angular/decorator-position',
-    '@tinkoff/eslint-config-angular/function-return-type',
+// optional
+import rxjsConfig from '@tinkoff/eslint-config-angular/rxjs';
+import promiseConfig from '@tinkoff/eslint-config-angular/promise';
+import importsConfig from '@tinkoff/eslint-config-angular/imports';
+import unicornConfig from '@tinkoff/eslint-config-angular/unicorn';
+import htmlEslintConfig from '@tinkoff/eslint-config-angular/html-eslint';
+import fileProgressConfig from '@tinkoff/eslint-config-angular/file-progress';
+import lineStatementsConfig from '@tinkoff/eslint-config-angular/line-statements';
+import memberOrderingConfig from '@tinkoff/eslint-config-angular/member-ordering';
+import decoratorPositionConfig from '@tinkoff/eslint-config-angular/decorator-position';
+import functionReturnTypeConfig from '@tinkoff/eslint-config-angular/function-return-type';
 
-    // experimental strict rules
-    '@tinkoff/eslint-config-angular/experimental',
-  ],
-}
+// experimental strict rules
+import experimentalConfig from '@tinkoff/eslint-config-angular/experimental';
+
+export default [
+  ...tinkoffConfig,
+  ...angularConfig,
+
+  // optional
+  ...rxjsConfig,
+  ...promiseConfig,
+  ...importsConfig,
+  ...unicornConfig,
+  ...htmlEslintConfig,
+  ...fileProgressConfig,
+  ...lineStatementsConfig,
+  ...memberOrderingConfig,
+  ...decoratorPositionConfig,
+  ...functionReturnTypeConfig,
+
+  // experimental strict rules
+  ...experimentalConfig,
+];
 ```
 
 #### Deprecated
