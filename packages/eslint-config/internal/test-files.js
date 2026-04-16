@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     files: ['**/*.spec.*', '**/*.test.*', '**/*.unit.*', '**/__tests__/**/*'],
 

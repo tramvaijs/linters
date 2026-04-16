@@ -1,6 +1,6 @@
-const promisePlugin = require('eslint-plugin-promise');
+import promisePlugin from 'eslint-plugin-promise';
 
-module.exports = [
+export default [
   promisePlugin.configs['flat/recommended'],
   {
     rules: {

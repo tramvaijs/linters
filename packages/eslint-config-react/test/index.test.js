@@ -1,11 +1,15 @@
 import { ESLint } from 'eslint';
 import path from 'path';
+import { fileURLToPath } from 'url';
+import reactConfig from '../index.js';
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 describe('@tinkoff/eslint-config-react', () => {
   it('config working', async () => {
     const cli = new ESLint({
       overrideConfigFile: true,
-      overrideConfig: require('../index'),
+      overrideConfig: reactConfig,
       cwd: path.join(__dirname, '..'),
     });
 

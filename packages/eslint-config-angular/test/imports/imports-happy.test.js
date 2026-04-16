@@ -1,11 +1,15 @@
 import { ESLint } from 'eslint';
 import path from 'path';
+import { fileURLToPath } from 'url';
+import importsConfig from '../../imports/index.js';
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 describe('imports / happy path', () => {
   const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
     overrideConfigFile: true,
-    overrideConfig: require('../../imports'),
+    overrideConfig: importsConfig,
   });
 
   it('happy', async () => {

@@ -1,21 +1,36 @@
-module.exports = [
-  ...require('@tinkoff/eslint-config/lib'),
-  ...require('@tinkoff/eslint-config/jest'),
+import { defineConfig, globalIgnores } from 'eslint/config';
+import lib from '@tinkoff/eslint-config/lib.js';
+import jest from '@tinkoff/eslint-config/jest.js';
+
+export default defineConfig([
+  globalIgnores([
+    // Tests
+    '**/__fixtures__/**',
+    '**/__snapshots__/**',
+    '**/*.fixture.*',
+    // IDE
+    '.DS_Store',
+    '.vscode/**',
+    '.idea/**',
+    // Dependency directories
+    'node_modules/**',
+    // Other
+    '.tmp/**',
+    'debug-path/**',
+  ]),
+  ...lib,
+  ...jest,
   {
-    ignores: [
-      // Tests
-      '**/__fixtures__/**',
-      '**/__snapshots__/**',
-      '**/*.fixture.*',
-      // IDE
-      '.DS_Store',
-      '.vscode/**',
-      '.idea/**',
-      // Dependency directories
-      'node_modules/**',
-      // Other
-      '.tmp/**',
-      'debug-path/**',
-    ],
+    rules: {
+      'import/extensions': [
+        'error',
+        'ignorePackages',
+        {
+          ts: 'never',
+          tsx: 'never',
+          jsx: 'never',
+        },
+      ],
+    },
   },
-];
+]);

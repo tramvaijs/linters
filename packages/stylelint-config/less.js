@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   customSyntax: 'postcss-less', // support less parser out-of-the-box
   extends: ['./stylelint.config.js'],
   rules: {

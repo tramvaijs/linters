@@ -1,6 +1,6 @@
-const jestPlugin = require('eslint-plugin-jest');
+import jestPlugin from 'eslint-plugin-jest';
 
-module.exports = [
+export default [
   jestPlugin.configs['flat/recommended'],
   {
     rules: {

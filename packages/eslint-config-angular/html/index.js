@@ -1,6 +1,6 @@
-const htmlPlugin = require('eslint-plugin-html');
+import htmlPlugin from 'eslint-plugin-html';
 
-module.exports = [
+export default [
   {
     files: ['**/*.html'],
     plugins: {

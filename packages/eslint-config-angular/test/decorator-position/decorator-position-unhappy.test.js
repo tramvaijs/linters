@@ -1,11 +1,15 @@
 import { ESLint } from 'eslint';
 import path from 'path';
+import { fileURLToPath } from 'url';
+import decoratorPositionConfig from '../../decorator-position/index.js';
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 describe('decorator-position / unhappy path', () => {
   const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
     overrideConfigFile: true,
-    overrideConfig: require('../../decorator-position'),
+    overrideConfig: decoratorPositionConfig,
   });
 
   it('unhappy', async () => {

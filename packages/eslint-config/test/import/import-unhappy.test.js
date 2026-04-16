@@ -1,12 +1,16 @@
 import { ESLint } from 'eslint';
 import path from 'path';
+import { fileURLToPath } from 'url';
+import importConfig from '../../internal/import.js';
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 describe('import / unhappy path', () => {
   const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
     overrideConfigFile: true,
     overrideConfig: [
-      ...require('../../internal/import'),
+      ...importConfig,
       {
         languageOptions: {
           sourceType: 'module',

@@ -1,7 +1,7 @@
-const { rules } = require('eslint-config-airbnb-extended/legacy');
-const typescriptParser = require('@typescript-eslint/parser');
+import { rules } from 'eslint-config-airbnb-extended/legacy';
+import typescriptParser from '@typescript-eslint/parser';
 
-module.exports = [
+export default [
   {
     files: ['**/*.js', '**/*.ts', '**/*.tsx'],
     languageOptions: {

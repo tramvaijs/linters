@@ -1,5 +1,7 @@
-module.exports = [
-  ...require('./index'),
+import index from './index.js';
+
+export default [
+  ...index,
   {
     rules: {
       'import/no-dynamic-require': 'off',

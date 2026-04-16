@@ -1,6 +1,6 @@
-const fileProgressPlugin = require('eslint-plugin-file-progress');
+import fileProgressPlugin from 'eslint-plugin-file-progress';
 
-module.exports = [
+export default [
   {
     plugins: {
       'file-progress': fileProgressPlugin,

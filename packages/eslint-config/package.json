@@ -9,6 +9,7 @@
     "eslint-config"
   ],
   "scripts": {},
+  "type": "module",
   "main": "index.js",
   "repository": {
     "type": "git",

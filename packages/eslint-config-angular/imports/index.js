@@ -1,9 +1,9 @@
-const tsParser = require('@typescript-eslint/parser');
-const tsPlugin = require('@typescript-eslint/eslint-plugin');
-const importPlugin = require('eslint-plugin-import');
-const simpleImportSortPlugin = require('eslint-plugin-simple-import-sort');
+import tsParser from '@typescript-eslint/parser';
+import tsPlugin from '@typescript-eslint/eslint-plugin';
+import importPlugin from 'eslint-plugin-import';
+import simpleImportSortPlugin from 'eslint-plugin-simple-import-sort';
 
-module.exports = [
+export default [
   {
     files: ['**/*.ts'],
     languageOptions: {

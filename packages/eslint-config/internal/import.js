@@ -1,6 +1,6 @@
-const importPlugin = require('eslint-plugin-import');
+import importPlugin from 'eslint-plugin-import';
 
-module.exports = [
+export default [
   {
     plugins: {
       import: importPlugin,

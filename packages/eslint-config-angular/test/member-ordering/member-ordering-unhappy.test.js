@@ -1,11 +1,15 @@
 import { ESLint } from 'eslint';
 import path from 'path';
+import { fileURLToPath } from 'url';
+import memberOrderingConfig from '../../member-ordering/index.js';
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 describe('member-ordering / unhappy path', () => {
   const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
     overrideConfigFile: true,
-    overrideConfig: require('../../member-ordering'),
+    overrideConfig: memberOrderingConfig,
   });
 
   it('unhappy', async () => {

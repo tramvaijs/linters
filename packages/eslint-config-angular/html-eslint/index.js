@@ -2,10 +2,10 @@
  * @description:
  * https://yeonjuan.github.io/html-eslint/docs/rules/no-inline-styles/
  */
-const htmlEslintPlugin = require('@html-eslint/eslint-plugin');
-const htmlEslintParser = require('@html-eslint/parser');
+import htmlEslintPlugin from '@html-eslint/eslint-plugin';
+import htmlEslintParser from '@html-eslint/parser';
 
-module.exports = [
+export default [
   {
     files: ['**/*.html'],
     plugins: {
