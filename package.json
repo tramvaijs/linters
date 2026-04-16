@@ -10,7 +10,7 @@
     "lint": "concurrently 'npm:prettier' 'npm:lint:all'",
     "lint:all": "eslint .",
     "prelint:ci": "lerna run build:prod --parallel",
-    "lint:ci": "NODE_OPTIONS=--no-experimental-require-module concurrently 'npm:prettier:ci' 'npm:lint:all'",
+    "lint:ci": "concurrently 'npm:prettier:ci' 'npm:lint:all'",
     "*** Bootstrap": "",
     "postinstall": "lerna bootstrap --hoist --ignore-prepublish && husky install",
     "********** Build": "",
