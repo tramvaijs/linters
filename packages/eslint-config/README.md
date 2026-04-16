@@ -1,6 +1,10 @@
 # @tinkoff/eslint-config
 
-ESlint plugin includes rules for JS and TS codebase. Better to use with framework-oriented packages `@tinkoff/eslint-config-react` or `@tinkoff/eslint-config-angular`
+ESLint config includes rules for JS and TS codebase. Better to use with framework-oriented packages `@tinkoff/eslint-config-react` or `@tinkoff/eslint-config-angular`.
+
+## Requirements
+
+ESLint >= 9 is required.
 
 ## Usage
 
@@ -10,62 +14,60 @@ Install from npm
 npm i --save-dev @tinkoff/eslint-config
 ```
 
-Then, need to include necessary configurations sets to `.eslintrc`. Wee need to choose base configuration, and any
-necessary additional configs. Package include eslint and prettier dependencies, so you should remove eslint, prettier from your project package.json because those packages are transitive dependencies.
+Create `eslint.config.js` at the project root. Package includes eslint and prettier as dependencies, so you should remove them from your project `package.json`.
 
 ### Base configurations
 
 #### For application
 
-```bash
-{
-  "extends": ["@tinkoff/eslint-config/app"]
-}
+```js
+import appConfig from '@tinkoff/eslint-config/app';
+
+export default [...appConfig];
 ```
 
 #### For library
 
-```bash
-{
-  "extends": ["@tinkoff/eslint-config/lib"]
-}
+```js
+import libConfig from '@tinkoff/eslint-config/lib';
+
+export default [...libConfig];
 ```
 
 ### Additional configurations
 
-#### If we use Jest
+#### With Jest
 
-```bash
-{
-  "extends": ["@tinkoff/eslint-config/app", "@tinkoff/eslint-config/jest"]
-}
+```js
+import appConfig from '@tinkoff/eslint-config/app';
+import jestConfig from '@tinkoff/eslint-config/jest';
+
+export default [...appConfig, ...jestConfig];
 ```
 
 ## Configurations overview
 
-Main configurations sets contains common rules
+Main configurations include common rules:
 
-- `@tinkoff/eslint-config/app` - common rules and specific rules for applications
-- `@tinkoff/eslint-config/lib` - common rules and specific rules for libraries
+- `@tinkoff/eslint-config/app` — common rules and specific rules for applications
+- `@tinkoff/eslint-config/lib` — common rules and specific rules for libraries
 
-Additional configurations sets. This configs **not** contain common eslint rules, and must be included with main
-configurations
+Additional configurations. These configs **do not** include common eslint rules and must be included alongside main configurations:
 
-- `@tinkoff/eslint-config/jest` - rules for lint Jest test suits
+- `@tinkoff/eslint-config/jest` — rules for linting Jest test suites
 
 ## Internal used plugins
 
 `@tinkoff/eslint-config/app` and `@tinkoff/eslint-config/lib` include:
 
-- `eslint-config-airbnb-extended` - Updated version of common and popular configuration `eslint-config-airbnb`
-- `eslint-plugin-eslint-comments` - validate `eslint` comments
-- `eslint-plugin-import` - validate proper imports
-- `eslint-plugin-promise` - enforce best practices for promises
-- `eslint-plugin-jest` - validate jest tests
-- `@typescript-eslint/eslint-plugin` - lint TypeScript files, adopt many eslint rules to TS code, and provide specific
-  TS rules
-- `eslint-plugin-prettier` - disable code formatting using eslint tools and transfers all the logic to a prettier, and
-  report differences as eslint issues
+- `eslint-config-airbnb-extended` — updated version of common and popular configuration `eslint-config-airbnb`
+- `@eslint-community/eslint-plugin-eslint-comments` — validate `eslint` comments
+- `eslint-plugin-import` — validate proper imports
+- `eslint-plugin-promise` — enforce best practices for promises
+- `eslint-plugin-jest` — validate jest tests
+- `@typescript-eslint/eslint-plugin` — lint TypeScript files, adopt many eslint rules to TS code, and provide specific TS rules
+- `eslint-plugin-prettier` — disable code formatting using eslint tools and transfer all the logic to prettier,
+  and report differences as eslint issues
 
 ## Troubleshooting
 
@@ -80,86 +82,80 @@ then reinstall dependencies.
 
 #### In root config
 
-1. Add `"@tinkoff/eslint-config"` to extends section on config.
-2. Set parserOptions.project for typescript files
+Create `eslint.config.js` at the workspace root:
 
-```json5
-{
+```js
+import appConfig from '@tinkoff/eslint-config';
 
-    "root": true,
-    "ignorePatterns": ["**/*"],
-    "extends": ["@tinkoff/eslint-config"]
-    // ...optionally some other configs
-    "overrides": [
-        {
-            "files": ["*.ts", "*.tsx"],
-            "parserOptions": {
-                "project": ["./tsconfig.base.json"]
-            }
-        }
-    ]
-}
+export default [
+  ...appConfig,
+  {
+    ignores: ['**/*'],
+  },
+];
 ```
 
 #### In apps and non-buildable/non-publishable libs
 
-Add `"@tinkoff/eslint-config/app"` in extends section after root config
+Create `eslint.config.js` in the project directory:
 
-```json
-{
-    "extends": ["../../.eslintrc.json", "@tinkoff/eslint-config/app"],
-    "ignorePatterns": ["!**/*"]
-    ...optionally some other configs
-}
+```js
+import rootConfig from '../../eslint.config.js';
+import appConfig from '@tinkoff/eslint-config/app';
+
+export default [
+  ...rootConfig,
+  ...appConfig,
+  {
+    files: ['**/*.ts', '**/*.tsx'],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.json'],
+      },
+    },
+  },
+];
 ```
 
 #### In buildable/publishable libs
 
-Add `"@tinkoff/eslint-config/lib"` in extends section after root config
+```js
+import rootConfig from '../../eslint.config.js';
+import libConfig from '@tinkoff/eslint-config/lib';
 
-```json
-{
-    "extends": ["../../.eslintrc.json", "@tinkoff/eslint-config/lib"],
-    "ignorePatterns": ["!**/*"]
-    ...optionally some other configs
-}
+export default [
+  ...rootConfig,
+  ...libConfig,
+  {
+    files: ['**/*.ts', '**/*.tsx'],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.json'],
+      },
+    },
+  },
+];
 ```
-
-### Non-JSON configs usage
-
-Nx means usage `.eslintrc.json` for configure ESLint. Just provide it! In `.eslintrc.json` add extension of actual root config file:
-
-```
-{
-  "extends": ["./.eslintrc.js"]
-}
-```
-
-After that:
-
-- Nx see what they need and don't re-initialize lint infrastructure
-- You can use [better config formats](https://eslint.org/docs/latest/user-guide/configuring/configuration-files#configuration-file-formats) and nx generators
 
 ### Disable false-positive detections from `import/no-unresolved`
 
-override rule in `.eslintrc` of apps/libs that contains problem:
+Override the rule in the project's `eslint.config.js`:
 
-```json5
-{
-  // ...some other configs...
-  // disable detection for packages starts with @tinkoff/
-  overrides: [
-    {
-      files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
-      rules: {
-        'import/no-unresolved': [
-          'error',
-          {
-            ignore: ['^@tinkoff/'],
-          },
-        ],
-      },
+```js
+import appConfig from '@tinkoff/eslint-config/app';
+
+export default [
+  ...appConfig,
+  {
+    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
+    rules: {
+      'import/no-unresolved': [
+        'error',
+        {
+          ignore: ['^@tinkoff/'],
+        },
+      ],
     },
-  ],
-}
+  },
+];
 ```
