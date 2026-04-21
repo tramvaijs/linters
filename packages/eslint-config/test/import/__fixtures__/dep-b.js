@@ -1,3 +1,3 @@
-import './import-unhappy.fixture.js';
+import './import-unhappy.fixture';
 
 export function b() {}

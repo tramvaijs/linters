@@ -5,6 +5,15 @@
   "license": "Apache-2.0",
   "type": "module",
   "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./lib": "./lib/index.js",
+    "./lib/index.js": "./lib/index.js",
+    "./deprecated/member-ordering": "./deprecated/member-ordering.js",
+    "./deprecated/member-ordering.js": "./deprecated/member-ordering.js",
+    "./deprecated/require-return-type": "./deprecated/require-return-type.js",
+    "./deprecated/require-return-type.js": "./deprecated/require-return-type.js"
+  },
   "scripts": {},
   "repository": {
     "type": "git",

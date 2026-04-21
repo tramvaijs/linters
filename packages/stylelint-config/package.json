@@ -9,6 +9,18 @@
   ],
   "type": "module",
   "main": "stylelint.config.js",
+  "exports": {
+    ".": "./stylelint.config.js",
+    "./stylelint.config.js": "./stylelint.config.js",
+    "./angular": "./angular.js",
+    "./angular.js": "./angular.js",
+    "./angular-less": "./angular-less.js",
+    "./angular-less.js": "./angular-less.js",
+    "./less": "./less.js",
+    "./less.js": "./less.js",
+    "./prettier": "./prettier.js",
+    "./prettier.js": "./prettier.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tramvaijs/linters.git"

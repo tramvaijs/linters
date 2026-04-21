@@ -11,6 +11,17 @@
   "scripts": {},
   "type": "module",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./index": "./index.js",
+    "./index.js": "./index.js",
+    "./app": "./app.js",
+    "./app.js": "./app.js",
+    "./lib": "./lib.js",
+    "./lib.js": "./lib.js",
+    "./jest": "./jest.js",
+    "./jest.js": "./jest.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tramvaijs/linters.git"
