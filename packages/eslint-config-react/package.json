@@ -11,6 +11,11 @@
   "scripts": {},
   "type": "module",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./index": "./index.js",
+    "./index.js": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tramvaijs/linters.git"

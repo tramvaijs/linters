@@ -100,7 +100,7 @@ export default [
 Create `eslint.config.js` in the project directory:
 
 ```js
-import rootConfig from '../../eslint.config.js';
+import rootConfig from '../../eslint.config';
 import appConfig from '@tinkoff/eslint-config/app';
 
 export default [
@@ -120,7 +120,7 @@ export default [
 #### In buildable/publishable libs
 
 ```js
-import rootConfig from '../../eslint.config.js';
+import rootConfig from '../../eslint.config';
 import libConfig from '@tinkoff/eslint-config/lib';
 
 export default [

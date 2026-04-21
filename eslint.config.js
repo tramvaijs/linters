@@ -1,6 +1,6 @@
 import { defineConfig, globalIgnores } from 'eslint/config';
-import lib from '@tinkoff/eslint-config/lib.js';
-import jest from '@tinkoff/eslint-config/jest.js';
+import lib from '@tinkoff/eslint-config/lib';
+import jest from '@tinkoff/eslint-config/jest';
 
 export default defineConfig([
   globalIgnores([
