@@ -1,4 +1,4 @@
-import tsPlugin from '@typescript-eslint/eslint-plugin';
+import tseslint from 'typescript-eslint';
 import tsParser from '@typescript-eslint/parser';
 
 export default [
@@ -6,7 +6,7 @@ export default [
   {
     files: ['**/*.ts', '**/*.tsx'],
     rules: {
-      ...tsPlugin.configs['eslint-recommended'].overrides[0].rules,
+      ...tseslint.configs.eslintRecommended.rules,
     },
   },
   // TypeScript-specific configuration
@@ -22,10 +22,10 @@ export default [
       },
     },
     plugins: {
-      '@typescript-eslint': tsPlugin,
+      '@typescript-eslint': tseslint.plugin,
     },
     rules: {
-      ...tsPlugin.configs.recommended.rules,
+      ...tseslint.configs.recommended.rules,
 
       // swears on cases like constructor(public c: C) {}
       'no-useless-constructor': 'off',

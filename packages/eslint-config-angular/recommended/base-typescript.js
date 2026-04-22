@@ -1,11 +1,11 @@
-import tsPlugin from '@typescript-eslint/eslint-plugin';
+import tseslint from 'typescript-eslint';
 import tsParser from '@typescript-eslint/parser';
 
 export default [
   {
     files: ['**/*.ts'],
     rules: {
-      ...tsPlugin.configs['eslint-recommended'].overrides[0].rules,
+      ...tseslint.configs.eslintRecommended.rules,
     },
   },
   {
@@ -20,7 +20,7 @@ export default [
       },
     },
     plugins: {
-      '@typescript-eslint': tsPlugin,
+      '@typescript-eslint': tseslint.plugin,
     },
     rules: {
       'no-useless-constructor': 'off',
