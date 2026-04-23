@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/eslint-config-angular",
-  "version": "5.1.0",
+  "version": "5.2.1",
   "description": "ESLint configs for Angular apps",
   "license": "Apache-2.0",
   "keywords": [
@@ -68,10 +68,10 @@
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^5.0.0",
     "@tinkoff/eslint-config": "^5.0.0",
-    "typescript-eslint": "^8.59.0",
     "eslint": "^9",
     "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-sort-class-members": "^1.21.0"
+    "eslint-plugin-sort-class-members": "^1.21.0",
+    "typescript-eslint": "^8.59.0"
   },
   "publishConfig": {
     "access": "public"

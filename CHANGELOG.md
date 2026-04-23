@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.2.1](https://github.com/tramvaijs/linters/compare/v5.2.0...v5.2.1) (2026-04-23)
+
+**Note:** Version bump only for package linters-monorepo
+
+
+
+
+
 ## [5.2.0](https://github.com/tramvaijs/linters/compare/v5.1.0...v5.2.0) (2026-03-04)
 
 

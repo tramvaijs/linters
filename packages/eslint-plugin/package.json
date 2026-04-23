@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/eslint-plugin",
-  "version": "5.0.0",
+  "version": "5.2.1",
   "description": "Custom ESLint rules",
   "license": "Apache-2.0",
   "type": "module",
