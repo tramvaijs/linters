@@ -1,15 +1,13 @@
 import { ESLint } from 'eslint';
 import path from 'path';
-import { fileURLToPath } from 'url';
-import importsConfig from '../../imports/index.js';
-
-const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 describe('imports / unhappy path', () => {
   const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
-    overrideConfigFile: true,
-    overrideConfig: importsConfig,
+    useEslintrc: false,
+    baseConfig: {
+      extends: ['../imports'],
+    },
   });
 
   it('unhappy', async () => {

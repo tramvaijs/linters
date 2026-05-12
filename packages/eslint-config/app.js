@@ -1,3 +1,7 @@
-import index from './index.js';
+module.exports = {
+  extends: ['./index'],
 
-export default [...index];
+  plugins: [],
+
+  rules: {},
+};

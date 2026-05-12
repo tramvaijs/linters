@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   testEnvironment: 'node',
   cacheDirectory: '<rootDir>/.tmp/jest',
   fakeTimers: {

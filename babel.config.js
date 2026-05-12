@@ -1,5 +1,4 @@
-export default {
-  sourceType: 'unambiguous',
+module.exports = {
   presets: [
     [
       '@babel/preset-env',
@@ -8,7 +7,7 @@ export default {
           node: 'current',
         },
       },
+      '@babel/preset-typescript',
     ],
-    '@babel/preset-typescript',
   ],
 };

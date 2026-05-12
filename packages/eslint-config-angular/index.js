@@ -1,3 +1,3 @@
-import recommended from './recommended/index.js';
-
-export default [...recommended];
+module.exports = {
+  extends: ['./recommended/index.js'],
+};

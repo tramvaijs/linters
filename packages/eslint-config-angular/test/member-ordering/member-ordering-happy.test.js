@@ -1,15 +1,13 @@
 import { ESLint } from 'eslint';
 import path from 'path';
-import { fileURLToPath } from 'url';
-import memberOrderingConfig from '../../member-ordering/index.js';
-
-const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 describe('member-ordering / happy path', () => {
   const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
-    overrideConfigFile: true,
-    overrideConfig: memberOrderingConfig,
+    useEslintrc: false,
+    baseConfig: {
+      extends: ['../member-ordering'],
+    },
   });
 
   it('happy', async () => {

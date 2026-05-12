@@ -1,11 +1,11 @@
-import path from 'path';
+const path = require('path');
 
 const message = `
 [Deprecated]: @tinkoff/member-ordering doesn't support anymore!
 [Recommendation]: Use another rules or @typescript-eslint/member-ordering directly
 `;
 
-export default {
+module.exports = {
   meta: {
     type: 'suggestion',
     docs: {
