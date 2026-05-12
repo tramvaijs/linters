@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   extends: ['./stylelint.config.js'],
   plugins: ['stylelint-order', 'stylelint-no-px'],
   rules: {

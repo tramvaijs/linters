@@ -1,6 +1,6 @@
 # @tinkoff/prettier-config
 
-Common Prettier configuration. Compatible with other eslint configs.
+Common Prettier configuration. Compatible with another eslint configs.
 
 ## Usage
 
@@ -23,9 +23,11 @@ More information about available at
 
 - **angular**
 
-```js
-// .prettierrc.mjs
-export { default } from '@tinkoff/prettier-config/angular';
+```json5
+{
+  // ...
+  prettier: '@tinkoff/prettier-config/angular',
+}
 ```
 
 ## Migration guide

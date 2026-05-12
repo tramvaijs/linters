@@ -1,13 +1,10 @@
-import promisePlugin from 'eslint-plugin-promise';
+module.exports = {
+  extends: ['plugin:promise/recommended'],
 
-export default [
-  promisePlugin.configs['flat/recommended'],
-  {
-    rules: {
-      'promise/always-return': 'off',
-      'promise/no-callback-in-promise': 'off',
-      'promise/catch-or-return': 'warn',
-      'promise/param-names': 'warn',
-    },
+  rules: {
+    'promise/always-return': 'off',
+    'promise/no-callback-in-promise': 'off',
+    'promise/catch-or-return': 'warn',
+    'promise/param-names': 'warn',
   },
-];
+};

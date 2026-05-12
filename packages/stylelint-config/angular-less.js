@@ -1,7 +1,7 @@
-import angularConfig from './angular.js';
-import lessConfig from './less.js';
+const angularConfig = require('./angular');
+const lessConfig = require('./less');
 
-export default {
+module.exports = {
   ...angularConfig,
   customSyntax: lessConfig.customSyntax,
   rules: {

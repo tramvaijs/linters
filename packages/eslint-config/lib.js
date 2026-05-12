@@ -1,13 +1,12 @@
-import index from './index.js';
+module.exports = {
+  extends: ['./index'],
 
-export default [
-  ...index,
-  {
-    rules: {
-      'import/no-dynamic-require': 'off',
-      'import/no-deprecated': 'off',
-      '@typescript-eslint/no-var-requires': 'off',
-      '@typescript-eslint/no-empty-function': 'off',
-    },
+  plugins: [],
+
+  rules: {
+    'import/no-dynamic-require': 'off',
+    'import/no-deprecated': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
   },
-];
+};

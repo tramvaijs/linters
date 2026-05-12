@@ -1,20 +1,19 @@
-import jestPlugin from 'eslint-plugin-jest';
+module.exports = {
+  extends: ['plugin:jest/recommended'],
 
-export default [
-  jestPlugin.configs['flat/recommended'],
-  {
-    rules: {
-      'jest/expect-expect': [
-        'warn',
-        {
-          assertFunctionNames: [
-            'expect',
-            // support superagent library
-            'request.**.expect',
-          ],
-        },
-      ],
-      'jest/no-disabled-tests': 'off',
-    },
+  plugins: [],
+
+  rules: {
+    'jest/expect-expect': [
+      'warn',
+      {
+        assertFunctionNames: [
+          'expect',
+          // support superagent library
+          'request.**.expect',
+        ],
+      },
+    ],
+    'jest/no-disabled-tests': 'off',
   },
-];
+};
