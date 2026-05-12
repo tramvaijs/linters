@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.0](https://github.com/tramvaijs/linters/compare/v5.2.2...v6.0.0) (2026-05-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to esm and flat eslint config
+
+### Features
+
+* migrate to eslint 9 ([3bcf4af](https://github.com/tramvaijs/linters/commit/3bcf4afe93f6f4a62affd128af17fd3482cd742d))
+
+
+
 ### [5.2.2](https://github.com/tramvaijs/linters/compare/v5.2.1...v5.2.2) (2026-05-12)
 
 

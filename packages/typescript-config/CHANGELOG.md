@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.0](https://github.com/tramvaijs/linters/compare/v5.2.2...v6.0.0) (2026-05-12)
+
+**Note:** Version bump only for package @tinkoff/typescript-config
+
+
+
+
+
 ## [5.0.0](https://github.com/tramvaijs/linters/compare/v4.2.0...v5.0.0) (2025-01-09)
 
 **Note:** Version bump only for package @tinkoff/typescript-config

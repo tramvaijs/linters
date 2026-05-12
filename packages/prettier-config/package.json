@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/prettier-config",
-  "version": "5.2.2",
+  "version": "6.0.0",
   "description": "Prettier config",
   "license": "Apache-2.0",
   "keywords": [
