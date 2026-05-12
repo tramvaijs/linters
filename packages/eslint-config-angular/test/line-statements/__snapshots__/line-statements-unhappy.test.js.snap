@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`line statements / unhappy path unhappy 1`] = `
+exports[`line-statements / unhappy path unhappy 1`] = `
 "error: Expected blank line before this statement (@stylistic/padding-line-between-statements) at packages/eslint-config-angular/test/line-statements/__fixtures__/line-statements-unhappy.fixture.ts:5:1:
   3 | 
   4 | function a2() {}

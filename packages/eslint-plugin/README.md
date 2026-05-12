@@ -1,12 +1,18 @@
 ### Usage
 
-```json5
-{
-  plugins: ['@tinkoff/eslint-plugin'],
-  rules: {
-    // ...
+```js
+import tinkoffPlugin from '@tinkoff/eslint-plugin';
+
+export default [
+  {
+    plugins: {
+      '@tinkoff': tinkoffPlugin,
+    },
+    rules: {
+      // configure rules here
+    },
   },
-}
+];
 ```
 
 ### Rules
