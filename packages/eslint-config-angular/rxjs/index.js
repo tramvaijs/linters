@@ -1,21 +1,26 @@
-module.exports = {
-  overrides: [
-    {
-      files: ['*.ts'],
-      parser: '@typescript-eslint/parser',
-      plugins: ['rxjs'],
-      extends: ['plugin:rxjs/recommended'],
-      rules: {
-        'rxjs/no-compat': 'error',
-        'rxjs/no-connectable': 'error',
-        'rxjs/no-cyclic-action': 'error',
-        'rxjs/no-ignored-observable': 'error',
-        'rxjs/no-topromise': 'error',
-        'rxjs/no-unsafe-catch': 'error',
-        'rxjs/no-unsafe-first': 'error',
-        'rxjs/no-unsafe-switchmap': 'error',
-        'rxjs/throw-error': 'error',
-      },
+import tsParser from '@typescript-eslint/parser';
+import rxjsXPlugin from 'eslint-plugin-rxjs-x';
+
+export default [
+  {
+    files: ['**/*.ts'],
+    languageOptions: {
+      parser: tsParser,
     },
-  ],
-};
+    plugins: {
+      'rxjs-x': rxjsXPlugin,
+    },
+    rules: {
+      ...rxjsXPlugin.configs['recommended-legacy']?.rules,
+      'rxjs-x/no-compat': 'error',
+      'rxjs-x/no-connectable': 'error',
+      'rxjs-x/no-cyclic-action': 'error',
+      'rxjs-x/no-floating-observables': 'error',
+      'rxjs-x/no-topromise': 'error',
+      'rxjs-x/no-unsafe-catch': 'error',
+      'rxjs-x/no-unsafe-first': 'error',
+      'rxjs-x/no-unsafe-switchmap': 'error',
+      'rxjs-x/throw-error': 'error',
+    },
+  },
+];

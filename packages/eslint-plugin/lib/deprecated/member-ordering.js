@@ -1,4 +1,4 @@
-const path = require('path');
+import path from 'path';
 
 const allowedDecorators = [
   '@Input',
@@ -74,7 +74,7 @@ const message = `
 [Recommendation]: Use another rules or @typescript-eslint/member-ordering directly
 `;
 
-module.exports = {
+export default {
   meta: {
     type: 'suggestion',
     docs: {

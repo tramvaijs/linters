@@ -10,6 +10,15 @@
   "type": "module",
   "scripts": {},
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./index": "./index.js",
+    "./index.js": "./index.js",
+    "./angular": "./angular.js",
+    "./angular.js": "./angular.js",
+    "./plugins/prettier-plugin-sort-package": "./plugins/prettier-plugin-sort-package",
+    "./plugins/prettier-plugin-sort-package.js": "./plugins/prettier-plugin-sort-package.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tramvaijs/linters.git"

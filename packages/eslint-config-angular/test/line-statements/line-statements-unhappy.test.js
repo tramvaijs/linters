@@ -1,13 +1,15 @@
 import { ESLint } from 'eslint';
 import path from 'path';
+import { fileURLToPath } from 'url';
+import lineStatementsConfig from '../../line-statements/index.js';
 
-describe('line statements / unhappy path', () => {
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
+
+describe('line-statements / unhappy path', () => {
   const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
-    useEslintrc: false,
-    baseConfig: {
-      extends: ['../line-statements'],
-    },
+    overrideConfigFile: true,
+    overrideConfig: lineStatementsConfig,
   });
 
   it('unhappy', async () => {

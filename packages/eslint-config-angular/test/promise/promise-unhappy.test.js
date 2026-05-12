@@ -1,16 +1,24 @@
 import { ESLint } from 'eslint';
 import path from 'path';
+import { fileURLToPath } from 'url';
+import promiseConfig from '../../promise/index.js';
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 describe('promise / unhappy', () => {
   const cli = new ESLint({
     cwd: path.join(__dirname, '..'),
-    useEslintrc: false,
-    baseConfig: {
-      extends: ['../promise'],
-      parserOptions: {
-        project: 'tsconfig.json',
+    overrideConfigFile: true,
+    overrideConfig: [
+      ...promiseConfig,
+      {
+        languageOptions: {
+          parserOptions: {
+            project: 'tsconfig.json',
+          },
+        },
       },
-    },
+    ],
   });
 
   it('unhappy', async () => {
