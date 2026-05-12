@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.2.2](https://github.com/tramvaijs/linters/compare/v5.2.1...v5.2.2) (2026-05-12)
+
+
+### Reverts
+
+* Revert "migrate to eslint v9" ([634f3b5](https://github.com/tramvaijs/linters/commit/634f3b5f8e88d7581efb11c700c9097846aaaa0c))
+
+
+
 ### [5.2.1](https://github.com/tramvaijs/linters/compare/v5.2.0...v5.2.1) (2026-04-23)
 
 **Note:** Version bump only for package @tinkoff/prettier-config
