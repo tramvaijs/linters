@@ -67,7 +67,7 @@
   },
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^5.0.0",
-    "@tinkoff/eslint-config": "^5.0.0",
+    "@tinkoff/eslint-config": "^6.0.0",
     "eslint": "^9",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-sort-class-members": "^1.21.0",
