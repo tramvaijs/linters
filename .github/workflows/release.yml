@@ -14,7 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v7
       with:
-        token: ${{ secrets.TRAMVAI_LINTERS_PAT }}
         fetch-depth: 0
 
     - name: Git Identity
