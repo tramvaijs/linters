@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.0.1](https://github.com/tramvaijs/linters/compare/v6.0.0...v6.0.1) (2026-08-31)
+
+
+### Bug Fixes
+
+* peer version ([d5400d3](https://github.com/tramvaijs/linters/commit/d5400d3884fb5b40ec63ce9768117dd83fbd800c))
+
+
+
 ## [6.0.0](https://github.com/tramvaijs/linters/compare/v5.2.2...v6.0.0) (2026-05-12)
 
 
