@@ -24,10 +24,7 @@ export default [
       '@html-eslint/no-obsolete-tags': 'error',
       '@html-eslint/no-target-blank': 'error',
       '@html-eslint/require-button-type': 'off',
-      '@html-eslint/require-closing-tags': [
-        'error',
-        { selfClosing: 'always', allowSelfClosingCustom: false },
-      ],
+      '@html-eslint/require-closing-tags': ['error', { selfClosing: 'always' }],
       '@html-eslint/require-li-container': 'error',
       // SEO
       '@html-eslint/no-multiple-h1': 'error',
