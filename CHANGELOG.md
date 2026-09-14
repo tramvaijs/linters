@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.0.2](https://github.com/tramvaijs/linters/compare/v6.0.1...v6.0.2) (2026-09-14)
+
+
+### Bug Fixes
+
+* **eslint-config-angular:** remove unsupported allowSelfClosingCustom option ([df73a02](https://github.com/tramvaijs/linters/commit/df73a020766a99f9af0b65bcd52ac788c86fd048))
+
+
+
 ### [6.0.1](https://github.com/tramvaijs/linters/compare/v6.0.0...v6.0.1) (2026-08-31)
 
 
